@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Тетяна Сливка](https://up.htmlacademy.ru/adaptive/22/user/1703957).
-* Наставник: [Анастасия Полозова] (https://htmlacademy.ru/profile/id258631).
+* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631).
 
 
 ---
