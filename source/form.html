@@ -25,124 +25,125 @@
     <main class="main">
         <h1 class="main__title">Подбор программы</h1>
         <section>
-            <h2 class="visually-hidden">Анкета</h2>
-            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="form__title">Заполните анкету, и мы подберем програму питания для вашего кота</p>
-
-              <fieldset class="form__data">
-                <div>
-                  <label class="form__data-label" for="name">Имя:*</label>
-                  <input class="form__data-field" id="name" type="text" name="name" placeholder="БАРСИК">
+          <h2 class="visually-hidden">Анкета</h2>
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="form__title">Заполните анкету, и мы подберем програму питания для вашего кота</p>
+            <fieldset class="form__block">
+              <div>
+                <label class="form__label" for="name">Имя:*</label>
+                <input class="form__field" id="name" type="text" name="name" placeholder="БАРСИК">
+              </div>
+              <div>
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input class="form__field" id="weight" type="text" name="name" placeholder="7">
+              </div>
+              <div>
+                <label class="form__label" for="age">Возраст (лет):*</label>
+                <input class="form__field" id="age" type="text" name="name" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="form__block">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="slim" id="slim"
+                    checked>
+                  <label class="form__label" for="slim">Похудение</label>
+                </li>
+                <li class="form__item">
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="fat" id="fat">
+                  <label class="form__label" for="fat">Набор массы</label>
+                </li>
+                <li class="form__item">
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="advice"
+                    id="advice">
+                  <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__block">
+              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              <div>
+                <label class="form__label" for="email">E-mail:*</label>
+                <input class="form__field form__field--icon" id="email" type="text" name="name"
+                  placeholder="kuklachev@gmail.com">
+              </div>
+              <div>
+                <label class="form__label" for="tel">Вес (кг):*</label>
+                <input class="form__field form__field--icon" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+              </div>
+            </fieldset>
+            <fieldset class="form__block">
+              <h2 class="form__title">Комментарий</h2>
+              <div>
+                <label class="form__label" for="comment">Комментарий</label>
+                <input class="form__field" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+              </div>
+            </fieldset>
+            <fieldset class="form__block">
+              <h2 class="form__title">Дополнительно</h2>
+              <ul class="form__list">
+                <li>
+                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="sugar" checked>
+                  <label class="form__label" for="sugar">Сахарозаменитель</label>
+                </li>
+                <li>
+                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="water">
+                  <label class="form__label" for="water">Питьевая вода</label>
+                </li>
+                <li>
+                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="milk">
+                  <label class="form__label" for="milk">Молоко</label>
+                </li>
+                <li>
+                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="vitamin">
+                  <label class="form__label" for="vitamin">Витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__text">* — Обязательные поля</p>
+          </form>
+          </main>
+          <footer class="main-footer">
+            <section class="main-footer__address">
+              <div class="main-footer__address-wrapper address-wrapper">
+                <h2 class="address-wrapper__title">приглашаем к сотрудничеству дилеров!</h2>
+                <div class="address-wrapper__text-wrapper">
+                  <p class="address-wrapper__text">ул. Большая
+                    Конюшенная, д. 19/8</p>
+                  <p class="address-wrapper__text">Санкт-Петербург</p>
                 </div>
-                <div>
-                  <label class="form__data-label" for="weight">Вес (кг):*</label>
-                  <input class="form__data-field" id="weight" type="text" name="name" placeholder="7">
+              </div>
+              <div class="footer__maps">
+                <div class="footer__maps-pin">
+                  <img src="img/map_pin.svg" width="57" height="53" alt="Точка на карте">
                 </div>
-                <div>
-                  <label class="form__data-label" for="age">Возраст (лет):*</label>
-                  <input class="form__data-field" id="age" type="text" name="name" placeholder="7">
-                </div>
-              </fieldset>
-              <fieldset class="form__features">
-                <ul class="form__features-list">
-                  <li class="form__features-item">
-                    <input class="visually-hidden form__features-checkbox" type="checkbox" name="slim" id="slim" checked>
-                    <label class="form__features-label" for="slim">Похудение</label>
-                  </li>
-                  <li class="form__features-item">
-                    <input class="visually-hidden form__features-checkbox" type="checkbox" name="fat" id="fat">
-                    <label class="form__features-label" for="fat">Набор массы</label>
-                  </li>
-                  <li class="form__features-item">
-                    <input class="visually-hidden form__features-checkbox" type="checkbox" name="advice" id="advice">
-                    <label class="form__features-label" for="advice">Не знаю (нужен ваш совет)</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="form__contact">
-                <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
-                <div>
-                  <label class="form__contact-label" for="email">E-mail:*</label>
-                  <input class="form__contact-email" id="email" type="text" name="name" placeholder="kuklachev@gmail.com">
-                </div>
-                <div>
-                  <label class="form__contact-label" for="tel">Вес (кг):*</label>
-                  <input class="form__contact-tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
-                </div>
-              </fieldset>
-              <fieldset class="form__comment">
-                <h2 class="form__comment-title">Комментарий</h2>
-                <div>
-                  <label class="form__comment-label" for="comment">Комментарий</label>
-                  <input class="form__comment-field" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
-                </div>
-              </fieldset>
-              <fieldset class="form__details">
-                <h2 class="form__details-title">Дополнительно</h2>
-                <ul class="form__details-list">
-                  <li>
-                    <input class="form__details-checkbox" type="checkbox" name="checkbox" id="sugar" checked>
-                    <label class="form__details-label" for="sugar">Сахарозаменитель</label>
-                  </li>
-                  <li>
-                    <input class="form__details-checkbox" type="checkbox" name="checkbox" id="water">
-                    <label class="form__details-label" for="water">Питьевая вода</label>
-                  </li>
-                  <li>
-                    <input class="form__details-checkbox" type="checkbox" name="checkbox" id="milk">
-                    <label class="form__details-label" for="milk">Молоко</label>
-                  </li>
-                  <li>
-                    <input class="form__details-checkbox" type="checkbox" name="checkbox" id="vitamin">
-                    <label class="form__details-label" for="vitamin">Витамины</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="form__button" type="submit">Отправить заявку</button>
-              <p class="form__text">* — Обязательные поля</p>
-            </form>
-        </section>
-    </main>
-    <footer class="main-footer">
-      <section class="main-footer__address">
-        <div class="main-footer__address-wrapper address-wrapper">
-          <h2 class="address-wrapper__title">приглашаем к сотрудничеству дилеров!</h2>
-          <div class="address-wrapper__text-wrapper">
-            <p class="address-wrapper__text">ул. Большая
-              Конюшенная, д. 19/8</p>
-            <p class="address-wrapper__text">Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="footer__maps">
-          <div class="footer__maps-pin">
-            <img src="img/map_pin.svg" width="57" height="53" alt="Точка на карте">
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016.7054727971113!2d30.32012679706767!3d59.938759415982524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616838608523!5m2!1sru!2sua" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
-      <section class="social">
-        <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
-        <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип">
-        <div class="social__link-wrapper">
-          <a class="social__link" href="#">
-            <img class="social__link-icon" src="img/icon_vkontakte.svg" width="23" height="16" alt="Мы Вконтакте" >
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__link-icon" src="img/icon_instagram.svg" width="16" height="16" alt="Мы в Инстаграме">
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__link-icon" src="img/icon_facebook.svg" width="22" height="22" alt="Мы в Фейсбуке">
-          </a>
-        </div>
-        <div class="social__site">
-          <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="social__site-logo" src="img/logo_html.svg" width="27" height="34" alt="Сайт HTML Academy">
-          </a>
-        </div>
-      </section>
-
-    </footer>
-
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016.7054727971113!2d30.32012679706767!3d59.938759415982524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616838608523!5m2!1sru!2sua"
+                  width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </section>
+            <section class="social">
+              <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
+              <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип">
+              <div class="social__link-wrapper">
+                <a class="social__link" href="#">
+                  <img class="social__link-icon" src="img/icon_vkontakte.svg" width="23" height="16" alt="Мы Вконтакте">
+                </a>
+                <a class="social__link" href="#">
+                  <img class="social__link-icon" src="img/icon_instagram.svg" width="16" height="16" alt="Мы в Инстаграме">
+                </a>
+                <a class="social__link" href="#">
+                  <img class="social__link-icon" src="img/icon_facebook.svg" width="22" height="22" alt="Мы в Фейсбуке">
+                </a>
+              </div>
+              <div class="social__site">
+                <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <img class="social__site-logo" src="img/logo_html.svg" width="27" height="34" alt="Сайт HTML Academy">
+                </a>
+              </div>
+            </section>
+          </footer>
   </body>
 </html>
