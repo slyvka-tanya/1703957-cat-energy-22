@@ -1,0 +1,67 @@
+// Adress
+.address-wrapper {
+  display: flex;
+  padding: 28px 20px;
+}
+
+.address-wrapper__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  flex-basis: 235px;
+}
+
+.address-wrapper__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+//Map
+
+
+// Social
+
+.social {
+  text-align: center;
+  padding-top: 40px;
+  background-color: $gray_light_back;
+}
+
+.social__link-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 75px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    width: 240px;
+    height: 2px;
+    background-color: $line-gray;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 240px;
+    height: 2px;
+    background-color: $line-gray;
+  }
+}
+
+.social__site {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__site-link {
+  font-family: Arial, sans-serif;
+  line-height: 18px;
+}

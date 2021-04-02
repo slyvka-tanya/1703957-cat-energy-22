@@ -1,0 +1,33 @@
+.benefits {
+  margin: auto 20px;
+}
+
+.benefits__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.benefits__item {
+  display: flex;
+}
+
+.benefits__icon-wrapper {
+  width: 150px;
+  height: 60px;
+  background-color: $basic_green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__number {
+  display: none;
+}
+
+.benefits__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 20px;
+}

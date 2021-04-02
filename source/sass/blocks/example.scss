@@ -1,0 +1,53 @@
+.example {
+  background-color: $gray_back;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  padding: 27px 20px 0;
+}
+
+.example__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 20px;
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__item {
+  padding-left: 62px;
+}
+
+.example__item-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.example__item-text {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__item-desc {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.toogle {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+
+.toogle__text {
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
