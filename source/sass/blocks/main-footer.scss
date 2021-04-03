@@ -14,7 +14,7 @@
 }
 
 .address-wrapper__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -36,6 +36,7 @@
   display: flex;
   justify-content: space-around;
   padding: 45px 75px;
+
   &::before {
     content: "";
     position: absolute;
@@ -45,6 +46,7 @@
     height: 2px;
     background-color: $line-gray;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -62,6 +64,6 @@
 }
 
 .social__site-link {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 18px;
 }

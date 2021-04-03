@@ -19,6 +19,7 @@
   height: 25px;
   border: none;
   background-color: #ffffff;
+
   &::before {
     position: absolute;
     content: "";
@@ -27,8 +28,9 @@
     width: 1px;
     height: 18px;
     background-color: $black;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -37,7 +39,7 @@
     width: 1px;
     height: 18px;
     background-color: $black;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
 
@@ -46,8 +48,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  padding: 20px 0px;
+  padding: 20px 0;
   text-align: center;
+
   &::before {
     content: "";
     position: absolute;
