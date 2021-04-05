@@ -37,9 +37,8 @@
   left: 3%;
   width: 67px;
   height: 50px;
-  background-size: 100%;
   display: block;
-  background-image: url(../img/index/features-cat-pro.svg);
+  background: url(../img/index/features-cat-pro.svg);
 }
 
 .features__item-image {
@@ -79,7 +78,7 @@
     left: 40%;
     width: 24px;
     height: 12px;
-    background-image: url(../img/index/icon-arrow-link.svg);
+    background: url(../img/index/icon-arrow-link.svg);
     display: block;
   }
 }
