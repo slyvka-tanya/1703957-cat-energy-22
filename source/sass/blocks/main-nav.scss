@@ -1,0 +1,13 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__item {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid $line-gray-light;
+}

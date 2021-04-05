@@ -26,8 +26,57 @@
 }
 
 .benefits__text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+  .leaf-icon::before {
+    content: "";
+    top: 8%;
+    left: 8%;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    display: block;
+    background-color: $basic_green;
+    background-image: url(../img/index/benefits-icon_leaf.svg);
+  }
+
+  .tub-icon::before {
+    content: "";
+    top: 8%;
+    left: 8%;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    display: block;
+    background-color: $basic_green;
+    background-image: url(../img/index/benefits-icon_tub.svg);
+  }
+
+  .eat-icon::before {
+    content: "";
+    top: 8%;
+    left: 8%;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    display: block;
+    background-color: $basic_green;
+    background-image: url(../img/index/benefits-icon_eat.svg);
+  }
+
+  .alarm-icon::before {
+    content: "";
+    top: 8%;
+    left: 8%;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    display: block;
+    background-color: $basic_green;
+    background-image: url(../img/index/benefits-icon_alarm.svg);
+  }

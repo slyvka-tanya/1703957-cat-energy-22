@@ -3,12 +3,17 @@
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/button.scss";
 
 // Blocks
 
 @import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/blockshero.scss";
 @import "blocks/features.scss";
 @import "blocks/benefits.scss";
 @import "blocks/example.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/toogle.scss";
+@import "blocks/address.scss";
+@import "blocks/social.scss";

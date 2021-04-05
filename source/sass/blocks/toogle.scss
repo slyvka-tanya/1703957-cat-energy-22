@@ -1,0 +1,11 @@
+.toogle {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+
+.toogle__text {
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
