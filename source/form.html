@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/header-logo-mobile-cat.svg" width="33" height="38" alt="Логотип Кота Энерджи">
-        <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Логотип текст">
-      </a>
-      <nav class="main-nav">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img src="img/header-logo-mobile-cat.svg" width="33" height="38" alt="Логотип Кота Энерджи">
+          <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Логотип текст">
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item-active"><a href="index.html">Главная</a></li>
@@ -22,8 +26,8 @@
       </nav>
     </header>
 
-    <main class="main">
-        <h1 class="main__title">Подбор программы</h1>
+    <main class="form-main">
+        <h1 class="form-main__title">Подбор программы</h1>
         <section>
           <h2 class="visually-hidden">Анкета</h2>
           <form class="form" action="https://echo.htmlacademy.ru" method="POST">
@@ -43,25 +47,25 @@
               </div>
             </fieldset>
             <fieldset class="form__block">
-              <ul class="form__list">
+              <ul class="form__list list--checkbox">
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="slim" id="slim"
                     checked>
-                  <label class="form__label" for="slim">Похудение</label>
+                  <label class="form__label label--sircle" for="slim">Похудение</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="fat" id="fat">
-                  <label class="form__label" for="fat">Набор массы</label>
+                  <label class="form__label label--sircle" for="fat">Набор массы</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="advice"
                     id="advice">
-                  <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
+                  <label class="form__label label--sircle" for="advice">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__block">
-              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
               <div>
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__field form__field--icon" id="email" type="text" name="name"
@@ -73,30 +77,30 @@
               </div>
             </fieldset>
             <fieldset class="form__block">
-              <h2 class="form__title">Комментарий</h2>
+              <h2 class="form__subtitle">Комментарий</h2>
               <div>
-                <label class="form__label" for="comment">Комментарий</label>
-                <input class="form__field" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+                <label class="form__label visually-hidden" for="comment">Комментарий</label>
+                <input class="form__field form__field--big" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
               </div>
             </fieldset>
             <fieldset class="form__block">
-              <h2 class="form__title">Дополнительно</h2>
+              <h2 class="form__subtitle">Дополнительно</h2>
               <ul class="form__list">
                 <li>
-                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="sugar" checked>
-                  <label class="form__label" for="sugar">Сахарозаменитель</label>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="sugar" checked>
+                  <label class="form__label form__checkbox--square" for="sugar">Сахарозаменитель</label>
                 </li>
                 <li>
-                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="water">
-                  <label class="form__label" for="water">Питьевая вода</label>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="water">
+                  <label class="form__label form__checkbox--square" for="water">Питьевая вода</label>
                 </li>
                 <li>
-                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="milk">
-                  <label class="form__label" for="milk">Молоко</label>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="milk">
+                  <label class="form__label form__checkbox--square" for="milk">Молоко</label>
                 </li>
                 <li>
-                  <input class="form__checkbox form__checkbox--square" type="checkbox" name="checkbox" id="vitamin">
-                  <label class="form__label" for="vitamin">Витамины</label>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="vitamin">
+                  <label class="form__label form__checkbox--square" for="vitamin">Витамины</label>
                 </li>
               </ul>
             </fieldset>

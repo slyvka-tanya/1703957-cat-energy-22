@@ -1,0 +1,123 @@
+.form__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-right: 74px;
+}
+
+.form__block {
+  padding: 18px 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(3) {
+    border-bottom: 1px solid $line-gray-light;
+    border-top: 1px solid $line-gray-light;
+  }
+}
+
+.form__block div {
+  padding: 5px 0;
+  display: flex;
+}
+
+.list--checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 130px;
+}
+
+.form__label {
+  line-height: 18px;
+  color: $gray_text;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.label--sircle {
+  padding-left: 50px;
+  position: relative;
+}
+
+.form__checkbox:checked~.label--sircle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic_green;
+  z-index: 1;
+}
+
+.label--sircle::after {
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 1px solid $gray_checkbox;
+}
+
+.form__field {
+  padding: 7px;
+  margin-left: 12px;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.form__subtitle {
+  position: relative;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 25px;
+}
+
+.form__field--big {
+  padding-bottom: 123px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.form__text {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.form__checkbox--square {
+  margin-bottom: 23px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.form__checkbox:checked~.form__checkbox--square::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 8px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/form/cheked.svg");
+  z-index: 1;
+}
+
+.form__checkbox--square::after {
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+}
