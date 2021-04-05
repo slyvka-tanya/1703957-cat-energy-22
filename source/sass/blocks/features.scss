@@ -19,29 +19,29 @@
   padding-top: 30px;
 }
 
-  .slim::before {
-    content: "";
-    position: absolute;
-    top: 8%;
-    left: 8%;
-    width: 50px;
-    height: 53px;
-    background-size: 100%;
-    display: block;
-    background-image: url(../img/index/features-cat-slim.svg);
-  }
+.slim::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 50px;
+  height: 53px;
+  background-size: 100%;
+  display: block;
+  background-image: url(../img/index/features-cat-slim.svg);
+}
 
-  .pro::before {
-    content: "";
-    position: absolute;
-    top: 8%;
-    left: 3%;
-    width: 67px;
-    height: 50px;
-    background-size: 100%;
-    display: block;
-    background-image: url(../img/index/features-cat-pro.svg);
-  }
+.pro::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  width: 67px;
+  height: 50px;
+  background-size: 100%;
+  display: block;
+  background-image: url(../img/index/features-cat-pro.svg);
+}
 
 .features__item-image {
   position: absolute;
