@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.form__checkbox:checked~.label--sircle::before {
+.form__checkbox:checked ~ .label--sircle::before {
   position: absolute;
   content: "";
   top: 0;
@@ -100,7 +100,7 @@
   position: relative;
 }
 
-.form__checkbox:checked~.form__checkbox--square::before {
+.form__checkbox:checked ~ .form__checkbox--square::before {
   position: absolute;
   content: "";
   top: 0;
