@@ -42,7 +42,7 @@
   background-size: 100%;
   display: block;
   background-color: $basic_green;
-  background-image: url(../img/index/benefits-icon_leaf.svg);
+  background-image: url("../img/index/benefits-icon_leaf.svg");
 }
 
 .tub-icon::before {
@@ -54,7 +54,7 @@
   background-size: 100%;
   display: block;
   background-color: $basic_green;
-  background-image: url(../img/index/benefits-icon_tub.svg);
+  background-image: url("../img/index/benefits-icon_tub.svg");
 }
 
 .eat-icon::before {
@@ -66,7 +66,7 @@
   background-size: 100%;
   display: block;
   background-color: $basic_green;
-  background-image: url(../img/index/benefits-icon_eat.svg);
+  background-image: url("../img/index/benefits-icon_eat.svg");
 }
 
 .alarm-icon::before {
@@ -78,5 +78,5 @@
   background-size: 100%;
   display: block;
   background-color: $basic_green;
-  background-image: url(../img/index/benefits-icon_alarm.svg);
+  background-image: url("../img/index/benefits-icon_alarm.svg");
 }
