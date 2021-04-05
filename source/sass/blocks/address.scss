@@ -1,0 +1,20 @@
+.address-wrapper {
+  display: flex;
+  padding: 28px 20px;
+}
+
+.address-wrapper__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  flex-basis: 235px;
+}
+
+.address-wrapper__text {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
