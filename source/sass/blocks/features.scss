@@ -48,28 +48,21 @@
 }
 
 .features__text {
+  margin: 0;
   font-family: $font-arial;
   width: 227px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $line-gray-light;
 }
 
 .features__link {
   position: relative;
   display: block;
-  padding: 25px 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 20px;
-    width: 240px;
-    height: 2px;
-    background-color: $line-gray;
-  }
+  padding: 20px 20px;
 
   &::after {
     content: "";
