@@ -17,7 +17,6 @@ body {
 }
 
 .button {
-  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -27,6 +26,10 @@ body {
   background-color: #65b738;
   color: #ffffff;
   text-decoration: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clear-list-style {
