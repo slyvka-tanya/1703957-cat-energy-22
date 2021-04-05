@@ -9,5 +9,9 @@
   line-height: 20px;
   padding: 20px 0;
   text-align: center;
-  border-bottom: 4px solid $line-gray-light;
+  border-bottom: 1px solid $line-gray-light;
+}
+
+.main-nav__item:last-child {
+  border: none;
 }
