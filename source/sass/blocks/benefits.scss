@@ -33,7 +33,7 @@
   grid-template-columns: 1fr 2fr;
 }
 
-.leaf-icon::before {
+.benefits__text--leaf-icon::before {
   content: "";
   top: 8%;
   left: 8%;
@@ -45,7 +45,7 @@
   background-image: url("../img/index/benefits-icon_leaf.svg");
 }
 
-.tub-icon::before {
+.benefits__text--tub-icon::before {
   content: "";
   top: 8%;
   left: 8%;
@@ -57,7 +57,7 @@
   background-image: url("../img/index/benefits-icon_tub.svg");
 }
 
-.eat-icon::before {
+.benefits__text--eat-icon::before {
   content: "";
   top: 8%;
   left: 8%;
@@ -69,7 +69,7 @@
   background-image: url("../img/index/benefits-icon_eat.svg");
 }
 
-.alarm-icon::before {
+.benefits__text--alarm-icon::before {
   content: "";
   top: 8%;
   left: 8%;

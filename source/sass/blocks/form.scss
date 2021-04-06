@@ -2,8 +2,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-right: 74px;
+  text-transform: uppercase;
 }
+
 
 .form__block {
   padding: 18px 0;
@@ -23,7 +24,7 @@
   display: flex;
 }
 
-.list--checkbox {
+.form__list--checkbox {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -38,12 +39,12 @@
   text-transform: uppercase;
 }
 
-.label--sircle {
+.form__label--sircle {
   padding-left: 50px;
   position: relative;
 }
 
-.form__checkbox:checked ~ .label--sircle::before {
+.form__checkbox:checked ~ .form__label--sircle::before {
   position: absolute;
   content: "";
   top: 0;
@@ -55,7 +56,7 @@
   z-index: 1;
 }
 
-.label--sircle::after {
+.form__label--sircle::after {
   position: absolute;
   content: "";
   top: -8px;
@@ -94,13 +95,13 @@
 }
 
 
-.form__checkbox--square {
+.form__label--square {
   margin-bottom: 23px;
   padding-left: 50px;
   position: relative;
 }
 
-.form__checkbox:checked ~ .form__checkbox--square::before {
+.form__checkbox:checked ~ .form__label--square::before {
   position: absolute;
   content: "";
   top: 0;
@@ -111,7 +112,7 @@
   z-index: 1;
 }
 
-.form__checkbox--square::after {
+.form__label--square::after {
   position: absolute;
   content: "";
   top: -8px;
