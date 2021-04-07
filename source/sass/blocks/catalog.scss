@@ -54,25 +54,25 @@
   padding-top: 60px;
 
   &::before {
-  position: absolute;
-  content: "";
-  top: 20%;
-  left: 50%;
-  width: 2px;
-  height: 30px;
-  background-color: $gray-plus;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    content: "";
+    top: 20%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: $gray-plus;
+    transform: translate(-50%, -50%);
   }
 
   &::after {
-  position: absolute;
-  content: "";
-  top: 20%;
-  left: 50%;
-  width: 2px;
-  height: 30px;
-  background-color: $gray-plus;
-  transform: translate(-50%, -50%) rotate(-90deg);
+    position: absolute;
+    content: "";
+    top: 20%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: $gray-plus;
+    transform: translate(-50%, -50%) rotate(-90deg);
   }
 }
 
@@ -86,7 +86,7 @@
 .catalog__button--other {
 
   &:last-child {
-  background-color: $gray_light_back;
-  color: $gray_text;
+    background-color: $gray_light_back;
+    color: $gray_text;
   }
 }
