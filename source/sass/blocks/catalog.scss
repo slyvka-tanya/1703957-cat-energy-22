@@ -83,10 +83,7 @@
   line-height: 16px;
 }
 
-.catalog__button--other {
-
-  &:last-child {
-    background-color: $gray_light_back;
-    color: $gray_text;
-  }
+.catalog__button--other:last-child {
+  background-color: $gray_light_back;
+  color: $gray_text;
 }
