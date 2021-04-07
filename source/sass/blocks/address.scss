@@ -1,6 +1,11 @@
 .address-wrapper {
   display: flex;
   padding: 28px 20px;
+  background-color: $gray_light_back;
+}
+
+.address-wrapper--background {
+  background-color: $white
 }
 
 .address-wrapper__title {

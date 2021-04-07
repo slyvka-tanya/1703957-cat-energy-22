@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/header-logo-mobile-cat.svg" width="33" height="38" alt="Логотип Кота Энерджи">
-        <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Логотип текст">
-      </a>
-      <nav class="main-nav">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img src="img/header-logo-mobile-cat.svg" width="33" height="38" alt="Логотип Кота Энерджи">
+          <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Логотип текст">
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item-active"><a href="index.html">Главная</a></li>
@@ -22,7 +26,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="catalog-main">
         <h1 class="visually-hidden">Каталог</h1>
 
       <section class="catalog">
@@ -158,7 +162,7 @@
             <img class="catalog__image" src="img/catalog/product7.png" width="72" height="84" alt="Корм">
             <div class="catalog__product">
               <table class="catalog__product-details product-details">
-                <caption class="catalog__title">Cat Energy Pro 500 г</caption>
+                <caption class="product-details__title">Cat Energy Pro 500 г</caption>
                 <tr class="product-details__text">
                   <td>Масса</td>
                   <td>500 г</td>
@@ -175,10 +179,10 @@
             </div>
             <a class="catalog__button button" href="blank.html">Заказать</a>
           </li>
-          <li>
-            <h2>Показать еще 100500 товаров</h2>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__button button">Показать все</button>
+          <li class="catalog__item catalog__item--other">
+            <h2 class="catalog__item--other-title">Показать еще 100500 товаров</h2>
+            <p class="catalog__item--other-text">На самом деле вкусов гораздо больше!</p>
+            <button class="catalog__button catalog__button--other button">Показать все</button>
           </li>
         </ul>
         </section>
@@ -188,8 +192,8 @@
             <ul class="additional__list">
               <li class="additional__item">
                 <h3 class="additional__title">Сахарозаменитель</h3>
-                <p class="additional__title">1 упаковка (100 г)</p>
-                <p class="additional__title">200 Р.</p>
+                <p class="additional__text">1 упаковка (100 г)</p>
+                <p class="additional__text">200 Р.</p>
                 <a class="additional__button button" type="button" href="blank.html">Заказать</a>
               </li>
               <li class="additional__item">
@@ -213,9 +217,6 @@
             </ul>
         </div>
         <div class="promo">
-          <div class="promo__img">
-            <img src="img/catalog/promo-mobile.png" width="280" height="289" alt="Кот в чехле">
-          </div>
           <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
@@ -228,7 +229,7 @@
           <div class="address-wrapper__text-wrapper">
             <p class="address-wrapper__text">ул. Большая
               Конюшенная, д. 19/8</p>
-            <p class="address__wrapper__text">Санкт-Петербург</p>
+            <p class="address-wrapper__text">Санкт-Петербург</p>
           </div>
         </div>
         <div class="main-footer__maps">
