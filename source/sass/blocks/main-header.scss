@@ -1,9 +1,27 @@
+.main-header {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 110px;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
   border-bottom: 1px solid $line-gray-light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    flex-grow: 3;
+    justify-content: flex-start;
+  }
 }
 
 .main-header__logo {
@@ -12,9 +30,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+  }
 }
 
-.main-nav__toggle {
+.main-header__toggle {
   position: relative;
   width: 25px;
   height: 25px;
@@ -41,5 +63,9 @@
     height: 18px;
     background-color: $black;
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -1,15 +1,91 @@
 .benefits {
   margin: auto 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 30px;
+  }
 }
 
 .benefits__title {
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 0;
+  }
+}
+
+.benefits__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+  }
 }
 
 .benefits__item {
+  position: relative;
   display: flex;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+    &::after {
+      content: "1";
+      position: absolute;
+      font-size: 280px;
+      top: 100px;
+      left: 120px;
+      width: 134px;
+      height: 280px;
+      color: $line-gray-light;
+      z-index: -1;
+    }
+  }
+  &:nth-child(2){
+    &::after {
+      content: "2";
+      position: absolute;
+      font-size: 280px;
+      top: 100px;
+      left: 120px;
+      width: 134px;
+      height: 280px;
+      color: $line-gray-light;
+      z-index: -1;
+    }
+  }
+  &:nth-child(3){
+    &::after {
+      content: "3";
+      position: absolute;
+      font-size: 280px;
+      top: 100px;
+      left: 120px;
+      width: 134px;
+      height: 280px;
+      color: $line-gray-light;
+      z-index: -1;
+    }
+  }
+  &:last-child{
+    &::after {
+      content: "4";
+      position: absolute;
+      font-size: 280px;
+      top: 100px;
+      left: 120px;
+      width: 134px;
+      height: 280px;
+      color: $line-gray-light;
+      z-index: -1;
+    }
+  }
+  }
 }
 
 .benefits__icon-wrapper {
@@ -26,11 +102,20 @@
 }
 
 .benefits__text {
+  position: relative;
   font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 265px;
+    padding-top: 100px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .benefits__text--leaf-icon::before {
@@ -43,6 +128,14 @@
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_leaf.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--tub-icon::before {
@@ -55,6 +148,14 @@
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_tub.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--eat-icon::before {
@@ -67,6 +168,14 @@
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_eat.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--alarm-icon::before {
@@ -79,4 +188,12 @@
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_alarm.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
 }

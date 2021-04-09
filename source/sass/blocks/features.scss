@@ -1,44 +1,104 @@
 .features__list {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 80px 110px 70px 110px;
+  }
+
 }
 
 .features__item {
   position: relative;
   background-color: $gray_light_back;
   padding: 20px 0;
-  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 51px 53px;
+  }
 }
 
 .features__title {
   margin: 0;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 36px;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 60px
+  }
 }
 
 .features__title--slim::before {
   content: "";
   position: absolute;
-  top: 8%;
+  top: 13px;
   left: 8%;
   width: 50px;
   height: 53px;
   display: block;
   background: url("../img/index/features-cat-slim.svg");
   background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    top: 75px;
+    left: 68%;
+    width: 200px;
+    height: 211px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 56px;
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+  }
 }
 
 .features__title--pro::before {
   content: "";
   position: absolute;
-  top: 8%;
+  top: 13px;
   left: 3%;
   width: 67px;
   height: 50px;
   display: block;
   background: url("../img/index/features-cat-pro.svg");
   background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    top: 75px;
+    left: 63%;
+    width: 268px;
+    height: 200px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 40px;
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+  }
 }
 
 .features__item-image {
@@ -56,6 +116,18 @@
   padding: 20px;
   margin: 0;
   border-bottom: 1px solid $line-gray-light;
+
+  @media (min-width: $tablet-width) {
+    width: 382px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+  }
 }
 
 .features__link {
@@ -63,11 +135,15 @@
   display: block;
   padding: 20px 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    bottom: 40%;
-    left: 40%;
+    bottom: 20px;
+    left: 110px;
     width: 24px;
     height: 12px;
     background: url("../img/index/icon-arrow-link.svg");
