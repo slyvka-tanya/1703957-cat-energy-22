@@ -102,7 +102,7 @@ main {
   @media (min-width: $tablet-width) {
     top: 28%;
     left: 117px;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   @media (min-width: $desktop-width) {
