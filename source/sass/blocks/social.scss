@@ -2,6 +2,16 @@
   text-align: center;
   padding-top: 40px;
   background-color: $gray_light_back;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 55px 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 57px;
+  }
 }
 
 .social__link-wrapper {
@@ -29,14 +39,37 @@
     height: 2px;
     background-color: $line-gray;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-grow: 1;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .social__site {
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .social__site-link {
   font-family: $font-arial;
   line-height: 18px;
+}
+
+.social__img {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }

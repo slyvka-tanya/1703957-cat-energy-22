@@ -1,8 +1,12 @@
 .benefits {
-  margin: auto 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: auto 30px;
+    padding: 0 30px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 70px;
   }
 }
 
