@@ -38,57 +38,57 @@
 
   @media (min-width: $tablet-width) {
     &:first-child {
-    &::after {
-      content: "1";
-      position: absolute;
-      font-size: 280px;
-      top: 100px;
-      left: 120px;
-      width: 134px;
-      height: 280px;
-      color: $line-gray-light;
-      z-index: -1;
+      &::after {
+        content: "1";
+        position: absolute;
+        font-size: 280px;
+        top: 100px;
+        left: 120px;
+        width: 134px;
+        height: 280px;
+        color: $line-gray-light;
+        z-index: -1;
+      }
     }
-  }
-  &:nth-child(2){
-    &::after {
-      content: "2";
-      position: absolute;
-      font-size: 280px;
-      top: 100px;
-      left: 120px;
-      width: 134px;
-      height: 280px;
-      color: $line-gray-light;
-      z-index: -1;
+    &:nth-child(2) {
+      &::after {
+        content: "2";
+        position: absolute;
+        font-size: 280px;
+        top: 100px;
+        left: 120px;
+        width: 134px;
+        height: 280px;
+        color: $line-gray-light;
+        z-index: -1;
+      }
     }
-  }
-  &:nth-child(3){
-    &::after {
-      content: "3";
-      position: absolute;
-      font-size: 280px;
-      top: 100px;
-      left: 120px;
-      width: 134px;
-      height: 280px;
-      color: $line-gray-light;
-      z-index: -1;
+    &:nth-child(3) {
+      &::after {
+        content: "3";
+        position: absolute;
+        font-size: 280px;
+        top: 100px;
+        left: 120px;
+        width: 134px;
+        height: 280px;
+        color: $line-gray-light;
+        z-index: -1;
+      }
     }
-  }
-  &:last-child{
-    &::after {
-      content: "4";
-      position: absolute;
-      font-size: 280px;
-      top: 100px;
-      left: 120px;
-      width: 134px;
-      height: 280px;
-      color: $line-gray-light;
-      z-index: -1;
+    &:last-child {
+      &::after {
+        content: "4";
+        position: absolute;
+        font-size: 280px;
+        top: 100px;
+        left: 120px;
+        width: 134px;
+        height: 280px;
+        color: $line-gray-light;
+        z-index: -1;
+      }
     }
-  }
   }
 }
 

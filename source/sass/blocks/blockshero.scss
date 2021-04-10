@@ -33,13 +33,12 @@ main {
     color: $black;
     font-size: 60px;
     line-height: 60px;
-    padding-right: 132px;;
+    padding-right: 132px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
   }
-
 
   &::before {
     position: absolute;
@@ -82,7 +81,6 @@ main {
 }
 
 .hero__image {
-
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;

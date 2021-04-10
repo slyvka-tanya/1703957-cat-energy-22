@@ -1,5 +1,4 @@
 .main-footer__address {
-
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -60,7 +59,7 @@
 
 .main-footer__maps {
   & iframe {
-  width: 100%;
-  height: 400px;
+    width: 100%;
+    height: 400px;
   }
 }

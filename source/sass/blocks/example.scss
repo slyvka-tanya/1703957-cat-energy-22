@@ -19,7 +19,6 @@
 
 .example--wrapper {
   @media (min-width: $desktop-width) {
-
     &:first-child {
       flex-basis: 436px;
     }
@@ -27,7 +26,7 @@
     &:last-child {
       flex-basis: 690px;
     }
-}
+  }
 }
 
 .example__title {
@@ -47,7 +46,6 @@
     top: 0;
     transform: translateY(-175px);
   }
-
 }
 
 .example__text {
@@ -62,8 +60,8 @@
   }
 
   @media (min-width: $desktop-width) {
-   width: 436px;
-   padding-top: 70px;
+    width: 436px;
+    padding-top: 70px;
   }
 }
 
@@ -78,7 +76,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     padding-top: 70px;
-   }
+  }
 }
 
 .example__item {
@@ -99,7 +97,6 @@
       margin-left: auto;
     }
   }
-
 }
 
 .example__item-title {
