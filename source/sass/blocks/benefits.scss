@@ -1,8 +1,8 @@
 .benefits {
-  padding: 0 20px;
+  padding: 0 20px 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 70px;
+    padding: 0 30px 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,11 +14,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 0;
+    padding-top: 45px;
   }
 }
 
@@ -28,69 +30,53 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 80px;
+    padding-top: 45px;
+
+    @media (min-width: $tablet-width) {
+      row-gap: 87px;
+      column-gap: 114px;
+      justify-content: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 61px;
+      flex-wrap: nowrap;
+    }
   }
 }
 
 .benefits__item {
   position: relative;
-  display: flex;
-  flex-grow: 1;
+  padding-bottom: 1px;
+
 
   @media (min-width: $tablet-width) {
     &:first-child {
-      &::after {
-        content: "1";
-        position: absolute;
-        font-size: 280px;
-        top: 100px;
-        left: 120px;
-        width: 134px;
-        height: 280px;
-        color: $line-gray-light;
-        z-index: -1;
-      }
+      background-image: url("../img/index/1.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position-x: 66%;
     }
 
     &:nth-child(2) {
-      &::after {
-        content: "2";
-        position: absolute;
-        font-size: 280px;
-        top: 100px;
-        left: 120px;
-        width: 134px;
-        height: 280px;
-        color: $line-gray-light;
-        z-index: -1;
-      }
+      background-image: url("../img/index/2.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 81% -29px;
     }
 
     &:nth-child(3) {
-      &::after {
-        content: "3";
-        position: absolute;
-        font-size: 280px;
-        top: 100px;
-        left: 120px;
-        width: 134px;
-        height: 280px;
-        color: $line-gray-light;
-        z-index: -1;
-      }
+        background-image: url("../img/index/3.svg");
+        background-size: 112px 280px;
+        background-repeat: no-repeat;
+        background-position: 79%;
     }
 
     &:last-child {
-      &::after {
-        content: "4";
-        position: absolute;
-        font-size: 280px;
-        top: 100px;
-        left: 120px;
-        width: 134px;
-        height: 280px;
-        color: $line-gray-light;
-        z-index: -1;
-      }
+      background-image: url("../img/index/4.svg");
+    background-size: 112px 280px;
+    background-repeat: no-repeat;
+    background-position: 87%;
     }
   }
 }
@@ -113,23 +99,25 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 265px;
-    padding-top: 100px;
+    padding-top: 106px;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
   }
 }
 
 .benefits__text--leaf-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   background-size: 100%;
@@ -138,18 +126,16 @@
   background-image: url("../img/index/benefits-icon_leaf.svg");
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 80px;
     height: 80px;
   }
 }
 
 .benefits__text--tub-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   background-size: 100%;
@@ -158,18 +144,16 @@
   background-image: url("../img/index/benefits-icon_tub.svg");
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 80px;
     height: 80px;
   }
 }
 
 .benefits__text--eat-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   background-size: 100%;
@@ -178,18 +162,16 @@
   background-image: url("../img/index/benefits-icon_eat.svg");
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 80px;
     height: 80px;
   }
 }
 
 .benefits__text--alarm-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   background-size: 100%;
@@ -198,9 +180,6 @@
   background-image: url("../img/index/benefits-icon_alarm.svg");
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 80px;
     height: 80px;
   }
