@@ -49,7 +49,6 @@
   position: relative;
   padding-bottom: 1px;
 
-
   @media (min-width: $tablet-width) {
     &:first-child {
       background-image: url("../img/index/1.svg");
@@ -66,17 +65,17 @@
     }
 
     &:nth-child(3) {
-        background-image: url("../img/index/3.svg");
-        background-size: 112px 280px;
-        background-repeat: no-repeat;
-        background-position: 79%;
+      background-image: url("../img/index/3.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 79%;
     }
 
     &:last-child {
       background-image: url("../img/index/4.svg");
-    background-size: 112px 280px;
-    background-repeat: no-repeat;
-    background-position: 87%;
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 87%;
     }
   }
 }
