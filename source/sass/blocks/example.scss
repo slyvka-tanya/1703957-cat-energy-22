@@ -6,7 +6,6 @@
     padding: 0;
     background-color: $white;
   }
-
 }
 
 .example--wrapper {
@@ -19,13 +18,12 @@
 
 .example--desktop {
   @media (min-width: $desktop-width) {
-  background-color: $gray_back;
-  display: flex;
-  justify-content: space-between;
-  padding: 70px 100px 70px 110px
+    background-color: $gray_back;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px 70px 110px;
   }
 }
-
 
 .example__title {
   font-size: 36px;
@@ -44,7 +42,6 @@
     margin-left: 110px;
     margin-bottom: 75px;
   }
-
 }
 
 .example__text {
@@ -60,9 +57,9 @@
   }
 
   @media (min-width: $desktop-width) {
-   width: 436px;
-   padding: 0;
-   padding-bottom: 55px;
+    width: 436px;
+    padding: 0;
+    padding-bottom: 55px;
   }
 }
 
@@ -73,7 +70,6 @@
 
 .example__item {
   padding-left: 55px;
-
 }
 
 .example__item-title {
@@ -83,9 +79,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-  line-height: 37px;
+    line-height: 37px;
   }
-
 }
 
 .example__item-text {
@@ -94,7 +89,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-  line-height: 14px;
+    line-height: 14px;
   }
 }
 
@@ -105,6 +100,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-  line-height: 20px;
+    line-height: 20px;
   }
 }

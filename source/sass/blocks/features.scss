@@ -4,7 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
-   margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 }
 
@@ -15,8 +15,8 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-   padding: 0 30px;
-   row-gap: 30px;
+    padding: 0 30px;
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +25,6 @@
     column-gap: 80px;
     padding: 0 110px;
   }
-
 }
 
 .features__item {
@@ -54,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center ;
+    text-align: center;
     padding-left: 40px;
   }
 }
@@ -156,8 +155,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-
 
   &::after {
     content: "";
