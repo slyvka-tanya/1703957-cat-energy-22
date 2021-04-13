@@ -20,9 +20,6 @@
     border: none;
     padding: 0;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .main-header__logo {
@@ -31,9 +28,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .main-header__toggle {

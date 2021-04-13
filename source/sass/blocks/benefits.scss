@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0px 0px 21px 80px;
+    margin: 0 0 21px 80px;
   }
 }
 
@@ -43,6 +43,7 @@
     column-gap: 60px;
   }
 }
+
 .benefits__item {
   position: relative;
   padding-bottom: 1px;
