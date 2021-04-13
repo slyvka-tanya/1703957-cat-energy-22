@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="wrapper">
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo">
@@ -21,9 +22,9 @@
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a>Главная </a> </li>
-        <li class="main-nav__item"><a href="catalog.html"> Каталог продукции</a> </li>
-        <li class="main-nav__item item--modifier"><a href="form.html">Подбор программы </a> </li>
+        <li class="main-nav__item main-nav__item--index"><a>Главная </a> </li>
+        <li class="main-nav__item main-nav__item--index"><a href="catalog.html"> Каталог продукции</a> </li>
+        <li class="main-nav__item main-nav__item--modifier main-nav__item--index"><a href="form.html">Подбор программы </a> </li>
       </ul>
     </nav>
   </header>
@@ -53,7 +54,7 @@
         </li>
         <li class="features__item">
           <h3 class="features__title features__title--pro">Набор массы</h3>
-          <p class="features__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможе
+          <p class="features__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
           <a class="features__link" href="#">Каталог PRO</a>
         </li>
@@ -88,10 +89,11 @@
       </ul>
     </section>
 
-    <section class="example">
-      <div class="example--wrapper">
-        <h2 class="example__title">Живой пример</h2>
+    <section class="example example--wrapper">
 
+        <h2 class="example__title">Живой пример</h2>
+        <div class="example--desktop">
+          <div class="example__column">
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов
@@ -111,7 +113,7 @@
           </li>
         </ul>
       </div>
-      <div class="example--wrapper">
+        <div class="example__column">
         <div class="example__image">
           <img class="example__image-before" src="img/index/example-before.png" width="280" height="232"
             alt="Кот до питания">
@@ -123,6 +125,7 @@
           <div class="toogle__slide"></div>
           <span class="toogle__text">стало</span>
         </div>
+      </div>
       </div>
     </section>
 
@@ -170,7 +173,7 @@
 
   </footer>
 
-
+</div>
 </body>
 
 </html>

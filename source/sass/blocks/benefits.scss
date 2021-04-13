@@ -2,11 +2,12 @@
   padding: 0 20px 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 21px;
+    padding: 0;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 70px;
+    margin: 0px 0px 21px 80px;
   }
 }
 
@@ -18,33 +19,31 @@
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 30px 72px;
     font-size: 60px;
-    line-height: 60px;
-    padding-top: 45px;
+  line-height: 60px;
   }
 }
 
 .benefits__list {
+
   @media (min-width: $tablet-width) {
+    padding: 0 30px 53px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 80px;
-    padding-top: 45px;
+    column-gap: 114px;
+    justify-content: left;
+    border-bottom: 1px solid $line-gray-light;
+  }
 
-    @media (min-width: $tablet-width) {
-      row-gap: 87px;
-      column-gap: 114px;
-      justify-content: left;
-    }
-
-    @media (min-width: $desktop-width) {
-      column-gap: 61px;
-      flex-wrap: nowrap;
-    }
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    border: none;
+    column-gap: 60px;
   }
 }
-
 .benefits__item {
   position: relative;
   padding-bottom: 1px;
@@ -101,14 +100,11 @@
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 265px;
-    padding-top: 106px;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding-left: 0;
-    padding-bottom: 50px;
+    padding: 112px 0 50px;
   }
 }
 
@@ -119,10 +115,12 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 30px 32px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -137,10 +135,12 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 29px 31px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_tub.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -155,10 +155,12 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 25px 30px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -173,10 +175,12 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 32px 33px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_alarm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;

@@ -4,8 +4,8 @@
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     padding: 55px 30px;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -19,6 +19,11 @@
   display: flex;
   justify-content: space-around;
   padding: 45px 75px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 130px;
+  }
 
   &::before {
     content: "";
@@ -41,8 +46,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    flex-grow: 1;
 
     &::before {
       display: none;
@@ -56,20 +59,22 @@
 
 .social__site {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    padding: 0;
   }
 }
 
 .social__site-link {
   font-family: $font-arial;
   line-height: 18px;
+  align-items: center;
+  display: flex;
 }
 
 .social__img {
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
   }
 }

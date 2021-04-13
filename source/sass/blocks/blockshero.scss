@@ -1,27 +1,28 @@
-main {
-  padding: 0;
-  margin: 0;
+.hero {
+  @media (min-width: $desktop-width) {
+  margin-bottom: 132px;
+  }
 }
 
 .hero__wrapper {
   position: relative;
-  text-align: center;
   width: 320px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-left: 114px;
+    padding-left: 117px;
     margin: 0;
-    width: 560px;
+    width: 414px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     padding-left: 190px;
-    width: auto;
+    display: flex;
+    width: 932px;
   }
+
 }
 
 .hero__title {
@@ -34,16 +35,17 @@ main {
   color: $white;
 
   @media (min-width: $tablet-width) {
-    color: $black;
     font-size: 60px;
     line-height: 60px;
-    padding-right: 132px;
+    color: $black;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: 414px;
-    padding-top: 55px;
+    padding-top: 78px;
   }
+
+
 
   &::before {
     position: absolute;
@@ -64,7 +66,7 @@ main {
       display: block;
       top: 0;
       left: 0;
-      transform: translate(73%, -24%);
+      transform: translate(73%, -21%);
       width: 720px;
       height: 694px;
       background-image: url("../img/index/hero-background-desktop.png");
@@ -83,8 +85,32 @@ main {
 
   @media (min-width: $tablet-width) {
     color: $black;
+    text-align: left;
     font-size: 20px;
     line-height: 20px;
+    padding-top: 40px;
+  }
+}
+
+
+
+
+.hero__button {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transform: translateY(61px);
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 300px;
+    left: 112px;
+    transform: translateY(-380%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62%;
+    transform: translateX(78px);
   }
 }
 
@@ -95,30 +121,7 @@ main {
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    right: 0;
-    transform: translateX(-163px);
     width: 552px;
     height: 499px;
-    padding-bottom: 30px;
-  }
-}
-
-.hero__button {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  transform: translateY(61px);
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    top: 31%;
-    left: 114px;
-    transform: translateY(0);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 54%;
-    transform: translateX(76px);
   }
 }

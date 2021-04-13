@@ -1,3 +1,13 @@
+.features {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+   margin-bottom: 70px;
+  }
+}
+
 .features__list {
   padding: 20px;
   display: flex;
@@ -5,24 +15,26 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+   padding: 0 30px;
+   row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 80px 110px 25px 110px;
     column-gap: 80px;
+    padding: 0 110px;
   }
+
 }
 
 .features__item {
   position: relative;
   background-color: $gray_light_back;
-  padding-top: 20px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 72px 49px 60px;
+    padding: 77px 53px 60px;
   }
 }
 
@@ -33,19 +45,17 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 8px;
   padding-left: 26px;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
     font-size: 36px;
+    text-align: left;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
-    padding-bottom: 50px;
-    padding-left: 60px;
+    text-align: center ;
+    padding-left: 40px;
   }
 }
 
@@ -62,15 +72,15 @@
 
   @media (min-width: $tablet-width) {
     top: 81px;
-    left: 63%;
+    left: 447px;
     width: 200px;
     height: 211px;
     background-size: 200px 211px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 41px;
-    left: 54px;
+    top: 42px;
+    left: 52px;
     width: 100px;
     height: 106px;
     background-size: 100px 106px;
@@ -89,16 +99,16 @@
   background-size: 67px 50px;
 
   @media (min-width: $tablet-width) {
-    top: 97px;
-    left: 58%;
+    top: 91px;
+    left: 412px;
     width: 268px;
     height: 200px;
     background-size: 268px 200px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 20px;
-    left: 45px;
+    top: 47px;
+    left: 30px;
     width: 134px;
     height: 100px;
     background-size: 134px 100px;
@@ -124,14 +134,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 0;
+    padding: 24px 0 49px;
     border: none;
-    padding-top: 27px;
-    padding-right: 266px;
+    width: 344px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    width: 467px;
+    padding: 74px 0 27px;
   }
 }
 
@@ -142,15 +152,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 8px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
+
 
   &::after {
     content: "";
@@ -161,6 +168,11 @@
     height: 12px;
     background: url("../img/index/icon-arrow-link.svg");
     display: block;
+
+    @media (min-width: $tablet-width) {
+      bottom: 5px;
+      left: 130px;
+    }
 
     @media (min-width: $desktop-width) {
       bottom: 8px;
