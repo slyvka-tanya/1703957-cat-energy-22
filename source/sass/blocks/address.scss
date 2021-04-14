@@ -2,10 +2,10 @@
   display: flex;
   padding: 28px 20px;
   background-color: $gray_light_back;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 71px 66px 52px;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
