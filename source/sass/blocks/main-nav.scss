@@ -1,5 +1,15 @@
 .main-nav {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-width: 440px;
+    justify-content: space-around;
+  }
 }
 
 .main-nav__item {
@@ -7,9 +17,25 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  padding: 20px 0;
+  padding: 23px 0;
   text-align: center;
+  text-transform: uppercase;
   border-bottom: 1px solid $line-gray-light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__item--index a {
+  @media (min-width: $desktop-width) {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .item--modifier {

@@ -1,15 +1,82 @@
 .benefits {
-  margin: auto 20px;
+  padding: 0 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 21px 80px;
+  }
 }
 
 .benefits__title {
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 30px 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.benefits__list {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 53px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 114px;
+    justify-content: left;
+    border-bottom: 1px solid $line-gray-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    border: none;
+    column-gap: 60px;
+  }
 }
 
 .benefits__item {
-  display: flex;
+  position: relative;
+  padding-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      background-image: url("../img/index/1.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position-x: 66%;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/index/2.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 81% -29px;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/index/3.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 79%;
+    }
+
+    &:last-child {
+      background-image: url("../img/index/4.svg");
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: 87%;
+    }
+  }
 }
 
 .benefits__icon-wrapper {
@@ -26,57 +93,97 @@
 }
 
 .benefits__text {
+  position: relative;
   font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 265px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 112px 0 50px;
+  }
 }
 
 .benefits__text--leaf-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 30px 32px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--tub-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 29px 31px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_tub.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--eat-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 25px 30px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__text--alarm-icon::before {
+  position: absolute;
   content: "";
-  top: 8%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 60px;
-  background-size: 100%;
+  background-size: 32px 33px;
   display: block;
   background-color: $basic_green;
   background-image: url("../img/index/benefits-icon_alarm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }

@@ -2,6 +2,16 @@
   text-align: center;
   padding-top: 40px;
   background-color: $gray_light_back;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px;
+  }
 }
 
 .social__link-wrapper {
@@ -10,13 +20,18 @@
   justify-content: space-around;
   padding: 45px 75px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 130px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     top: 18px;
-    left: 40px;
-    width: 240px;
-    height: 2px;
+    left: 10%;
+    width: 80%;
+    height: 1px;
     background-color: $line-gray;
   }
 
@@ -24,19 +39,36 @@
     content: "";
     position: absolute;
     bottom: 20px;
-    left: 40px;
-    width: 240px;
-    height: 2px;
+    left: 10%;
+    width: 80%;
+    height: 1px;
     background-color: $line-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .social__site {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__site-link {
   font-family: $font-arial;
   line-height: 18px;
+  align-items: center;
+  display: flex;
 }

@@ -1,12 +1,27 @@
-main {
-  padding: 0;
-  margin: 0;
+.hero {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 132px;
+  }
 }
 
 .hero__wrapper {
   position: relative;
+  width: 320px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    margin: 0;
+    width: 414px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    display: flex;
+    width: 932px;
+  }
 }
 
 .hero__title {
@@ -18,16 +33,42 @@ main {
   line-height: 36px;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+  }
+
   &::before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 302px;
     background-image: url("../img/index/hero-background.png");
     background-size: 100% 302px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      top: 0;
+      left: 0;
+      transform: translate(73%, -21%);
+      width: 720px;
+      height: 694px;
+      background-image: url("../img/index/hero-background-desktop.png");
+      background-size: 720px 694px;
+    }
   }
 }
 
@@ -35,11 +76,46 @@ main {
   font-size: 14px;
   line-height: 14px;
   color: $white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 47px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 40px;
+  }
 }
 
 .hero__button {
   position: absolute;
   bottom: 0;
   left: 20px;
-  transform: translateY(40px);
+  transform: translateY(61px);
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 300px;
+    left: 112px;
+    transform: translateY(-380%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62%;
+    transform: translateX(78px);
+  }
+}
+
+.hero__image {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
 }
