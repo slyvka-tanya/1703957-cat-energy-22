@@ -50,6 +50,10 @@
 .form__block--wrapper {
   &:last-child {
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
