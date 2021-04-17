@@ -11,7 +11,9 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     transform: translate(110px, 95px);
-    padding: 66px 76px 52px;
+    padding: 66px 89px 52px 78px;
+    width: 408px;
+    height: 81px;
   }
 }
 
@@ -45,6 +47,10 @@
     margin-bottom: 20px;
     text-align: right;
     width: 159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

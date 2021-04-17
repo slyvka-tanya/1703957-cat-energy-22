@@ -9,6 +9,7 @@
     display: flex;
     min-width: 440px;
     justify-content: space-around;
+    column-gap: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +40,29 @@
   }
 }
 
-.main-nav__item--index a {
+.main-nav__item a {
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item--white a {
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     color: $white;
     font-size: 20px;
