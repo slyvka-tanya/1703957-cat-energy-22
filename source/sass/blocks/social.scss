@@ -1,10 +1,10 @@
 .social {
   text-align: center;
-  padding-top: 40px;
+  padding: 40px 20px;
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 52px 30px;
     display: flex;
     justify-content: space-between;
   }
@@ -14,44 +14,40 @@
   }
 }
 
+.social__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    margin: 0;
+  }
+}
+
 .social__link-wrapper {
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 45px 75px;
+  padding: 22px 57px 15px;
+  border-top: 1px solid $line-gray-light;
+  border-bottom: 1px solid $line-gray-light;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 130px;
+    width: 152px;
+    padding-left: 26px;
+    border: none;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    background-color: $line-gray;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    background-color: $line-gray;
-  }
-
+.social__link-icon {
   @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
+    width: 25px;
+    height: 25px;
 
-    &::after {
-      display: none;
+    &:first-child {
+      width: 28px;
+      height: 33px;
     }
   }
 }
@@ -59,10 +55,12 @@
 .social__site {
   display: flex;
   justify-content: space-between;
-  padding: 0 25px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 163px;
+    align-items: center;
   }
 }
 

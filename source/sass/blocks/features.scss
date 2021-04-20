@@ -1,4 +1,6 @@
 .features {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
   }
@@ -22,7 +24,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    column-gap: 80px;
+    column-gap: 77px;
     padding: 0 110px;
   }
 }
@@ -30,7 +32,7 @@
 .features__item {
   position: relative;
   background-color: $gray_light_back;
-  padding-top: 28px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 60px;
@@ -44,7 +46,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 26px;
+  padding-left: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -89,8 +91,8 @@
 .features__title--pro::before {
   content: "";
   position: absolute;
-  top: 20px;
-  left: 4%;
+  top: 25px;
+  left: 13px;
   width: 67px;
   height: 50px;
   display: block;
@@ -106,8 +108,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 47px;
-    left: 30px;
+    top: 45px;
+    left: 34px;
     width: 134px;
     height: 100px;
     background-size: 134px 100px;
@@ -128,7 +130,7 @@
   padding: 20px;
   margin: 0;
   border-bottom: 1px solid $line-gray-light;
-  padding-top: 35px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -163,8 +165,8 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 20px;
-    left: 110px;
+    bottom: 21px;
+    left: 121px;
     width: 24px;
     height: 12px;
     background: url("../img/index/icon-arrow-link.svg");
@@ -184,8 +186,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 8px;
-      left: 138px;
+      bottom: 10px;
+      left: 133px;
     }
   }
 }

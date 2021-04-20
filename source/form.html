@@ -79,11 +79,13 @@
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__field form__field--icon" id="email" type="text" name="name"
                   placeholder="kuklachev@gmail.com">
+                <button type="button" class="form__field--icon-email"></button>
               </div>
               <div class="form__contact">
                 <label class="form__label" for="tel">Телефон:*</label>
                 <input class="form__field form__field--icon" id="tel" type="tel" name="tel"
                   placeholder="8 (960) 900-60-90">
+                <button type="button" class="form__field--icon-tel"></button>
               </div>
             </div>
           </fieldset>
@@ -123,8 +125,8 @@
     <footer class="main-footer">
       <section class="main-footer__address">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="main-footer__address-wrapper address-wrapper">
-          <p class="address-wrapper__title">приглашаем к сотрудничеству дилеров!</p>
+        <div class="main-footer__address-wrapper address-wrapper address-wrapper--background">
+          <p class="address-wrapper__title">Приглашаем к сотрудничеству дилеров!</p>
           <div class="address-wrapper__text-wrapper">
             <p class="address-wrapper__text">ул. Большая
               Конюшенная, д. 19/8</p>
@@ -139,7 +141,9 @@
       </section>
       <section class="social">
         <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
-        <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип">
+        <a class="social__img" href="index.html">
+          <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип">
+        </a>
         <div class="social__link-wrapper">
           <a class="social__link" href="#">
             <img class="social__link-icon" src="img/icon_vkontakte.svg" width="23" height="16" alt="Мы Вконтакте">
@@ -158,6 +162,7 @@
           </a>
         </div>
       </section>
+
     </footer>
   </div>
 </body>
