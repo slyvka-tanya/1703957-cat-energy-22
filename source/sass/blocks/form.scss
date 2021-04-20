@@ -108,6 +108,7 @@
 
 .form__contact {
   position: relative;
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
   }
