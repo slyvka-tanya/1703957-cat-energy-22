@@ -51,7 +51,7 @@
   }
 }
 
-.social__link-icon  {
+.social__link-icon {
   fill: #666666;
 
   &:hover {
@@ -62,13 +62,7 @@
     fill: $basic_green;
     fill-opacity: 0.3;
   }
-}
 
-.social__link-icon--background{
-  fill: transparent;
-}
-
-.social__link-icon {
   @media (min-width: $tablet-width) {
     width: 25px;
     height: 25px;
