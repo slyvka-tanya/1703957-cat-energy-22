@@ -14,19 +14,19 @@
   justify-content: center;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: $opacity-white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active {
-      background-color: #5eaa2f;
-      color: $opacity-white;
-    }
   }
 }

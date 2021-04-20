@@ -19,6 +19,16 @@
   justify-content: center;
   margin-bottom: 31px;
 
+  & img {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     align-items: flex-end;
     margin: 0;
@@ -39,6 +49,23 @@
     padding-left: 26px;
     border: none;
   }
+}
+
+.social__link-icon  {
+  fill: #666666;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    fill-opacity: 0.3;
+  }
+}
+
+.social__link-icon--background{
+  fill: transparent;
 }
 
 .social__link-icon {
@@ -70,4 +97,19 @@
   line-height: 18px;
   align-items: center;
   display: flex;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__site-logo {
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
 }

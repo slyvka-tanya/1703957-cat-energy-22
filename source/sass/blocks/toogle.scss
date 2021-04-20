@@ -57,12 +57,22 @@
     border-radius: 50%;
     background-color: $white;
     border: 1px solid #cdcdcd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $basic_green;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
 
     &::before {
       content: "";
       position: absolute;
-      top: 9px;
-      left: 11px;
+      top: 11px;
+      left: 12px;
       width: 8px;
       height: 8px;
       background-color: $basic_green;

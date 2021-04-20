@@ -86,6 +86,13 @@
 }
 
 .main-header__logo--mobile {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
   @media (min-width: $tablet-width) {
     display: none;
   }
