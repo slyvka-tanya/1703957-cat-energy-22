@@ -12,6 +12,7 @@
 }
 
 .form__title {
+  margin: 28px 0 38px;
   padding-left: 20px;
   font-size: 36px;
   font-weight: 400;
@@ -35,9 +36,8 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 14px;
   margin: 0;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -48,7 +48,7 @@
 }
 
 .form__block--wrapper {
-  margin-bottom: 30px;
+  position: relative;
 
   &:last-child {
     display: block;
@@ -73,7 +73,7 @@
 .form__block {
   padding: 0;
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 21px;
   border: 0;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,24 @@
   }
 }
 
+.form__block--name {
+  padding-bottom: 15px;
+}
+
+.form__block--checkbox {
+  padding-top: 8px;
+  padding-bottom: 25px;
+  margin-bottom: 27px;
+}
+
+.form__block--contact {
+  margin-bottom: 10px;
+}
+
+.form__block--comment {
+  margin-bottom: 17px;
+}
+
 .form__contact {
   position: relative;
 
@@ -114,42 +132,10 @@
   }
 }
 
-.form__field--icon-email {
-  position: absolute;
-  width: 18px;
-  height: 14px;
-  left: 245px;
-  top: 23px;
-  border: none;
-  background-image: url("../img/form/icon_email.svg");
-  background-color: transparent;
-
-  @media (min-width: $tablet-width) {
-    top: 27px;
-    left: 593px;
-  }
-}
-
-.form__field--icon-tel {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 247px;
-  top: 19px;
-  border: none;
-  background-image: url("../img/form/icon_phone.svg");
-  background-color: transparent;
-
-  @media (min-width: $tablet-width) {
-    top: 29px;
-    left: 594px;
-  }
-}
-
 .form__list--checkbox {
   display: flex;
   flex-direction: column;
-  row-gap: 26px;
+  row-gap: 25px;
   justify-content: space-around;
 
   @media (min-width: $tablet-width) {
@@ -219,7 +205,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 13px 5px 13px 16px;
+  padding: 13px 36px 13px 13px;
   margin-left: 12px;
   flex: 1;
   text-transform: uppercase;
@@ -237,7 +223,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 24px;
+  margin: 0 0 19px;
 
   &::after {
     position: absolute;
@@ -261,9 +247,48 @@
   }
 }
 
+.form__subtitle--comment-line {
+  &::after {
+    width: 56%;
+  }
+}
+
+.form__subtitle--add-line {
+  &::after {
+    width: 48%;
+  }
+}
+
+.form__contact--email {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 24px;
+    right: 16px;
+    width: 18px;
+    height: 13px;
+    background-image: url("../img/form/icon_email.svg");
+    z-index: 1;
+  }
+}
+
+.form__contact--tel {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 21px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/form/icon_phone.svg");
+    z-index: 1;
+  }
+}
+
 .form__field--big {
-  padding-bottom: 129px;
+  padding: 8px 5px 121px 13px;
   margin: 0;
+  margin-top: 13px;
   font-size: 16px;
   line-height: 18px;
 
@@ -279,11 +304,11 @@
   font-size: 14px;
   font-family: $font-arial;
   margin: 0;
-  padding: 21px 0 33px;
+  padding: 21px 0 29px;
 }
 
 .form__list--tablet {
-  padding-top: 17px;
+  padding-top: 21px;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
