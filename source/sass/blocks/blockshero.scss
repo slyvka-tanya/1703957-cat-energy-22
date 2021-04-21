@@ -9,7 +9,7 @@
   width: 320px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -112,14 +112,14 @@
   color: $white;
   text-transform: uppercase;
   margin: 0;
-  padding: 24px 0 20px;
+  padding: 27px 0 29px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 40px;
+    padding: 40px 0 23px;
   }
 }
 
@@ -127,25 +127,25 @@
   position: absolute;
   bottom: 0;
   left: 20px;
-  transform: translateY(50px);
+  transform: translateY(41px);
 
   @media (min-width: $tablet-width) {
     bottom: 300px;
     left: 112px;
-    transform: translateY(-418%);
+    transform: translateY(-423%);
   }
 
   @media (min-width: $desktop-width) {
-    top: 62%;
+    top: 311px;
     transform: translateX(78px);
   }
 }
 
 .hero__image {
   @media (min-width: $tablet-width) {
-    width: 709px;
+    width: 686px;
     height: 609px;
-    padding-left: 56px;
+    padding-left: 81px;
   }
 
   @media (min-width: $desktop-width) {

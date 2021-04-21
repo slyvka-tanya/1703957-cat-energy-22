@@ -17,7 +17,7 @@
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
-    padding: 7px 100px 70px 110px;
+    padding: 11px 100px 70px 110px;
   }
 }
 
@@ -67,7 +67,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 63px 0 55px;
+    margin: 60px 0 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,12 +90,13 @@
 .example__item {
   &:last-child {
     display: flex;
-    padding-left: 47px;
+    padding-left: 46px;
     padding-top: 4px;
+    column-gap: 3px;
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
-      row-gap: 10px;
+      row-gap: 9px;
       padding-left: 0;
       padding-top: 10px;
       margin-left: auto;
@@ -118,22 +119,22 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding: 13px 42px 17px;
+  padding: 14px 42px 15px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 13px 56px 21px;
+    padding: 13px 56px 18px;
   }
 }
 
-.example__item-title--padding {
-  padding: 13px 21px 17px 19px;
+.example__item-title--big-padding {
+  padding: 14px 21px 15px 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 29px 21px 29px;
+    padding: 13px 29px 18px 29px;
   }
 }
 

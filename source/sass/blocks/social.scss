@@ -1,6 +1,6 @@
 .social {
   text-align: center;
-  padding: 40px 20px;
+  padding: 39px 20px;
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
@@ -10,14 +10,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 110px;
+    padding: 55px 110px;
   }
 }
 
 .social__img {
   display: flex;
   justify-content: center;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   & img {
     &:hover {
@@ -33,27 +33,30 @@
     align-items: flex-end;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .social__link-wrapper {
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 22px 57px 15px;
+  padding: 24px 61px 19px 56px;
   border-top: 1px solid $line-gray-light;
   border-bottom: 1px solid $line-gray-light;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 152px;
-    padding-left: 26px;
+    padding-left: 23px;
     border: none;
+    align-items: center;
   }
 }
 
 .social__link-icon {
-  fill: #666666;
-
   &:hover {
     fill: $basic_green;
   }
@@ -62,22 +65,37 @@
     fill: $basic_green;
     fill-opacity: 0.3;
   }
+}
+
+.social__link-icon--vkontakte {
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 22px;
+  }
+}
 
-    &:first-child {
-      width: 28px;
-      height: 33px;
-    }
+.social__link-icon--instagram {
+  fill: #666666;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link-icon--facebook {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 29px;
   }
 }
 
 .social__site {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
