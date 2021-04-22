@@ -70,5 +70,12 @@
 .main-nav__item--active a {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic_green;
+    padding-bottom: 6px;
+  }
+}
+
+.main-nav__item--desktop-active a {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
   }
 }

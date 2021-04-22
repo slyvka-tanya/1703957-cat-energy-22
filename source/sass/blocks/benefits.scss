@@ -1,5 +1,5 @@
 .benefits {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
   line-height: 40px;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -99,7 +99,8 @@
   font-size: 14px;
   line-height: 18px;
   padding-left: 80px;
-  margin: 13px 0;
+  margin: 0;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     width: 265px;
