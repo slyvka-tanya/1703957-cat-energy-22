@@ -1,5 +1,5 @@
 .benefits {
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -47,9 +47,11 @@
 
 .benefits__item {
   position: relative;
-  padding-bottom: 1px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     &:first-child {
       background-image: url("../img/index/1.svg");
       background-size: 71px 236px;
@@ -100,7 +102,6 @@
   line-height: 18px;
   padding-left: 80px;
   margin: 0;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     width: 265px;
