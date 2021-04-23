@@ -1,6 +1,6 @@
 .social {
   text-align: center;
-  padding: 39px 20px;
+  padding: 39px 20px 22px;
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 24px 61px 19px 56px;
+  padding: 24px 61px 16px 56px;
   border-top: 1px solid $line-gray-light;
   border-bottom: 1px solid $line-gray-light;
 
