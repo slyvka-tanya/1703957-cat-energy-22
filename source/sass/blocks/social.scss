@@ -1,16 +1,41 @@
 .social {
   text-align: center;
-  padding-top: 40px;
+  padding: 39px 20px;
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 52px 30px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 110px;
+    padding: 55px 110px;
+  }
+}
+
+.social__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  & img {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 
@@ -18,51 +43,64 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 45px 75px;
+  padding: 24px 61px 19px 56px;
+  border-top: 1px solid $line-gray-light;
+  border-bottom: 1px solid $line-gray-light;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 130px;
+    width: 152px;
+    padding-left: 23px;
+    border: none;
+    align-items: center;
+  }
+}
+
+.social__link-icon {
+  &:hover {
+    fill: $basic_green;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    background-color: $line-gray;
+  &:active {
+    fill: $basic_green;
+    fill-opacity: 0.3;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    background-color: $line-gray;
-  }
+.social__link-icon--vkontakte {
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
+    width: 30px;
+    height: 22px;
+  }
+}
 
-    &::after {
-      display: none;
-    }
+.social__link-icon--instagram {
+  fill: #666666;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link-icon--facebook {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 29px;
   }
 }
 
 .social__site {
   display: flex;
   justify-content: space-between;
-  padding: 0 25px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 163px;
+    align-items: center;
   }
 }
 
@@ -71,4 +109,19 @@
   line-height: 18px;
   align-items: center;
   display: flex;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__site-logo {
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
 }

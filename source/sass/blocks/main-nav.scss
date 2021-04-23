@@ -7,13 +7,14 @@
 .main-nav__list {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     min-width: 440px;
-    justify-content: space-around;
-    column-gap: 5px;
+    column-gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 516px;
+    min-width: 498px;
+    column-gap: 36px;
   }
 }
 
@@ -22,7 +23,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  padding: 23px 0;
+  padding: 23px 0 22px;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 1px solid $line-gray-light;
@@ -41,7 +42,21 @@
 }
 
 .main-nav__item a {
-  @media (min-width: $tablet-width) {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item--white a {
+  @media (min-width: $desktop-width) {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+
     &:hover {
       opacity: 0.6;
     }
@@ -52,20 +67,15 @@
   }
 }
 
-.main-nav__item--white a {
+.main-nav__item--active a {
   @media (min-width: $tablet-width) {
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+    border-bottom: 2px solid $basic_green;
+    padding-bottom: 6px;
   }
+}
 
+.main-nav__item--desktop-active a {
   @media (min-width: $desktop-width) {
-    color: $white;
-    font-size: 20px;
-    line-height: 30px;
+    border-bottom: 2px solid $white;
   }
 }

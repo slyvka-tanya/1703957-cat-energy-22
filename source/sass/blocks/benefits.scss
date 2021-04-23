@@ -1,5 +1,6 @@
 .benefits {
-  padding: 0 20px 32px;
+  margin-bottom: 48px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -16,7 +17,7 @@
   line-height: 40px;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -31,8 +32,8 @@
     padding: 0 30px 53px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 80px;
-    column-gap: 114px;
+    row-gap: 83px;
+    column-gap: 119px;
     justify-content: left;
     border-bottom: 1px solid $line-gray-light;
   }
@@ -46,14 +47,16 @@
 
 .benefits__item {
   position: relative;
-  padding-bottom: 1px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     &:first-child {
       background-image: url("../img/index/1.svg");
-      background-size: 112px 280px;
+      background-size: 71px 236px;
       background-repeat: no-repeat;
-      background-position-x: 66%;
+      background-position: 65% -6px;
     }
 
     &:nth-child(2) {
@@ -67,14 +70,14 @@
       background-image: url("../img/index/3.svg");
       background-size: 112px 280px;
       background-repeat: no-repeat;
-      background-position: 79%;
+      background-position: 81% 57%;
     }
 
     &:last-child {
       background-image: url("../img/index/4.svg");
-      background-size: 112px 280px;
+      background-size: 121px 280px;
       background-repeat: no-repeat;
-      background-position: 87%;
+      background-position: 86% 55%;
     }
   }
 }
@@ -98,20 +101,21 @@
   font-size: 14px;
   line-height: 18px;
   padding-left: 80px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 265px;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 112px 0 50px;
+    padding: 111px 0 50px;
   }
 }
 
 .benefits__text--leaf-icon::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -126,12 +130,16 @@
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .benefits__text--tub-icon::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -146,12 +154,16 @@
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .benefits__text--eat-icon::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -166,12 +178,16 @@
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .benefits__text--alarm-icon::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -185,5 +201,9 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }
