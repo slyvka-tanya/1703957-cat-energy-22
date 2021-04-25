@@ -1,19 +1,55 @@
 .additional {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 88px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
 }
 
 .additional__caption {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
   margin-left: 20px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     font-size: 36px;
     line-height: 36px;
-    margin: 39px 66px 80px;
+    margin: 39px 66px 81px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 23px;
+      left: -66px;
+      background-color: $basic_green;
+
+      @media (min-width: $desktop-width) {
+        width: 69px;
+        left: -109px;
+      }
+    }
+
+    &::after {
+    position: absolute;
+    content: "";
+    width: 326px;
+    height: 2px;
+    top: 23px;
+    right: -363px;
+    background-color: $basic_green;
+
+    @media (min-width: $desktop-width) {
+      width: 78%;
+      right: -109px;
+    }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,12 +72,12 @@
 }
 
 .additional__item {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $gray_checkbox;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
-    padding: 26px 38px;
+    padding: 11px 37px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +85,7 @@
     justify-content: space-between;
     border-left: none;
     border-right: none;
-    padding: 23px 0 0 33px;
+    padding: 10px 0 0 33px;
     column-gap: 13px;
   }
 }
@@ -59,9 +95,13 @@
 }
 
 .additional__item--tablet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 2fr 1fr 92px;
+    grid-template-columns: 2fr 1fr 95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,6 +114,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 13px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -95,6 +139,7 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,15 +156,37 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
+    margin-top: 5px;
   }
 }
 
 .promo {
   position: relative;
-  padding: 20px;
+  padding: 38px 20px 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    top: 96px;
+    left: 120px;
+    background-image: url("../img/catalog/icon-promo-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 128px;
+      left: 109px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 58px;
+      left: 85px;
+    }
+
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 69px 30px;
+    padding: 68px 30px 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,20 +201,20 @@
   line-height: 20px;
   color: $white;
   text-align: center;
-  bottom: 75px;
+  bottom: 77px;
   margin: 0;
-  padding: 0 75px;
+  padding: 0 77px 0 67px;
 
   @media (min-width: $tablet-width) {
-    bottom: 137px;
-    left: 259px;
-    padding: 0 180px;
+    bottom: 145px;
+    left: 252px;
+    padding: 0 181px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 43px;
+    bottom: 42px;
     left: 0;
-    padding: 0 32px;
+    padding: 0 32px 0 44px;
   }
 }
 
