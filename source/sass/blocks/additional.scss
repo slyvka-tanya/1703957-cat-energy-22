@@ -37,18 +37,18 @@
     }
 
     &::after {
-    position: absolute;
-    content: "";
-    width: 326px;
-    height: 2px;
-    top: 23px;
-    right: -363px;
-    background-color: $basic_green;
+      position: absolute;
+      content: "";
+      width: 326px;
+      height: 2px;
+      top: 23px;
+      right: -363px;
+      background-color: $basic_green;
 
-    @media (min-width: $desktop-width) {
-      width: 78%;
-      right: -109px;
-    }
+      @media (min-width: $desktop-width) {
+        width: 78%;
+        right: -109px;
+      }
     }
   }
 
@@ -182,7 +182,6 @@
       top: 58px;
       left: 85px;
     }
-
   }
 
   @media (min-width: $tablet-width) {
