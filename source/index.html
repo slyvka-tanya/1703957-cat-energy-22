@@ -15,11 +15,13 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-          <img class="main-header__logo--mobile" src="img/header-logo-mobile-cat.svg" width="33" height="38"
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/header-logo.svg">
+            <img class="main-header__logo--mobile-cat" src="img/header-logo-mobile-cat.svg" width="33" height="38"
             alt="Логотип Кота Энерджи">
-          <img class="main-header__logo--mobile" src="img/header-logo-mobile.svg" width="101" height="18"
+            <img class="main-header__logo--mobile" src="img/header-logo-mobile.svg" width="101" height="18"
             alt="Логотип текст">
-          <img class="main-header__logo--tablet" src="img/header-logo.svg" width="174" height="52" alt="Логотип">
+        </picture>
         </a>
         <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -43,7 +45,7 @@
             <h2 class="hero__title">Функциональное питание для котов</h2>
             <p class="hero__subtitle">Занялся собой? Займись котом!</p>
           </div>
-          <img class="hero__image" src="img/index/hero-image-eat.svg" width="280" height="270" alt="Корм для котов">
+          <img class="hero__image" src="img/index/hero-image-eat.png" width="280" height="270" srcset="img/index/example-before@2x.png 2x" alt="Корм для котов">
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>

@@ -66,6 +66,10 @@
     background-size: 100% 302px;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/hero-background@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -79,6 +83,10 @@
       height: 694px;
       background-image: url("../img/index/hero-background-desktop.png");
       background-size: 720px 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/hero-background-desktop@2x.png");
+      }
     }
   }
 
