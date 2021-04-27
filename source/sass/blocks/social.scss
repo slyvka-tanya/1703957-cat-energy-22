@@ -96,18 +96,22 @@
   }
 }
 
-.social__link:hover {
-  & .social__link-icon--facebook-path {
-    stroke: $basic_green;
-    fill: #f2f2f2;
+.social__link {
+  &:hover {
+    & .social__link-icon--facebook-path {
+      stroke: $basic_green;
+      fill: #f2f2f2;
+    }
   }
 }
 
-.social__link:active {
-  & .social__link-icon--facebook-path {
-    stroke: $basic_green;
-    fill: #f2f2f2;
-    opacity: 0.3;
+.social__link {
+  &:active {
+    & .social__link-icon--facebook-path {
+      stroke: $basic_green;
+      fill: #f2f2f2;
+      opacity: 0.3;
+    }
   }
 }
 
