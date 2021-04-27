@@ -1,5 +1,6 @@
 .main-nav {
   @media (min-width: $tablet-width) {
+    display: block;
     margin-left: auto;
   }
 }

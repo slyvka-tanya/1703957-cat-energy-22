@@ -1,8 +1,8 @@
 .features {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +36,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 79px 53px 58px;
   }
 }
 
@@ -120,7 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 45px;
+    top: 49px;
     left: 34px;
     width: 134px;
     height: 100px;
@@ -146,7 +150,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 24px 0 49px;
+    padding: 24px 0 51px;
     border: none;
     width: 344px;
   }
@@ -167,6 +171,7 @@
     padding: 0;
     font-size: 20px;
     line-height: 30px;
+    width: 154px;
 
     &:active {
       opacity: 0.3;
@@ -178,27 +183,32 @@
     position: absolute;
     bottom: 23px;
     left: 121px;
-    width: 24px;
+    width: 32px;
     height: 12px;
     background: url("../img/index/icon-arrow-link.svg");
-    display: block;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       bottom: 5px;
       left: 130px;
-
-      &:hover {
-        background-size: 32px 12px;
-      }
-
-      &:active {
-        width: 32px;
-      }
     }
 
     @media (min-width: $desktop-width) {
       bottom: 7px;
       left: 133px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background: url("../img/index/icon-arrow-link-tablet.svg");
+    }
+  }
+
+  &:active {
+    &::after {
+      background: url("../img/index/icon-arrow-link-tablet.svg");
+      opacity: 0.3;
     }
   }
 }
