@@ -201,13 +201,13 @@
 
   &:hover {
     &::after {
-      background: url("../img/index/icon-arrow-link-tablet.svg");
+      background: url("../img/index/icon-arrow-link-hover.svg");
     }
   }
 
   &:active {
     &::after {
-      background: url("../img/index/icon-arrow-link-tablet.svg");
+      background: url("../img/index/icon-arrow-link-hover.svg");
       opacity: 0.3;
     }
   }

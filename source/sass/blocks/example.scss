@@ -218,7 +218,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -224px;
+      margin-top: -207px;
+      margin-left: 57px;
     }
   }
 
@@ -226,6 +227,10 @@
     @media (min-width: $tablet-width) {
       width: 354px;
       height: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 536px;
     }
   }
 
@@ -236,6 +241,11 @@
       display: block;
       width: 354px;
       height: 607px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 325px;
+      height: 536px;
     }
   }
 }

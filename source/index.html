@@ -46,8 +46,12 @@
             <h2 class="hero__title">Функциональное питание для котов</h2>
             <p class="hero__subtitle">Занялся собой? Займись котом!</p>
           </div>
-          <img class="hero__image" src="img/index/hero-image-eat.png" width="280" height="270"
-            srcset="img/index/hero-image-eat@2x.png 2x" alt="Корм для котов">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index/hero-image-eat-desktop@1x.png 1x, img/index/hero-image-eat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index/hero-image-eat-tablet@1x.png 1x, img/index/hero-image-eat-tablet@2x.png 2x">
+          <img class="hero__image" src="img/index/hero-image-eat-mobile@1x.png" width="280" height="270"
+            srcset="img/index/hero-image-eat-mobile@2x.png 2x" alt="Корм для котов">
+          </picture>
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -128,14 +132,16 @@
           <div class="example__column">
             <div class="example__image">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/index/example-before-tablet.png">
-                <img class="example__image-before" src="img/index/example-before.png" width="311" height="232"
-                  srcset="img/index/example-before@2x.png 2x" alt="Кот до питания">
+                <source media="(min-width: 1440px)" srcset="img/index/example-before-desktop@1x.png 1x, img/index/example-before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index/example-before-tablet@1x.png 1x, img/index/example-before-tablet@2x.png 2x">
+                <img class="example__image-before" src="img/index/example-before-mobile@1x.png" width="311" height="232"
+                  srcset="img/index/example-before-mobile@2x.png 2x" alt="Кот до питания">
               </picture>
               <picture>
-                <source media="(min-width: 768px)" srcset="img/index/example-after-tablet.png">
-                <img class="example__image-after" src="img/index/example-after.png" width="251" height="240"
-                  srcset="img/index/example-after@2x.png 2x" alt="Кот после питания">
+                <source media="(min-width: 1440px)" srcset="img/index/example-after-desktop@1x.png 1x, img/index/example-after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index/example-after-tablet@1x.png 1x, img/index/example-after-tablet@2x.png 2x">
+                <img class="example__image-after" src="img/index/example-after-mobile@1x.png" width="251" height="240"
+                  srcset="img/index/example-after-mobile@2x.png 2x" alt="Кот после питания">
               </picture>
             </div>
             <div class="toogle">
