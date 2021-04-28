@@ -5,7 +5,7 @@ mainNav.classList.add("modal-close");
 mainNavToggle.classList.add("main-header__toggle--close");
 
 mainNavToggle.addEventListener("click", function () {
-  mainNav.classList.add("modal-show");
+  mainNav.classList.toggle("modal-show");
   mainNavToggle.classList.toggle("main-header__toggle--open");
   mainNavToggle.classList.toggle("main-header__toggle--close");
 });
