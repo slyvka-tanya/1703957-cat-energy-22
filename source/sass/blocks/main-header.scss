@@ -59,34 +59,66 @@ picture {
 
 .main-header__toggle {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 1px;
   border: none;
-  background-color: $white;
+  margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 25px;
-    background-color: $black;
-    transform: translate(-50%, -50%) rotate(45deg);
+    top: -8px;
+    left: 0;
+    width: 24px;
+    height: 1px;
   }
 
   &::after {
     position: absolute;
     content: "";
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 25px;
-    background-color: $black;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    bottom: -7px;
+    left: 0;
+    width: 24px;
+    height: 1px;
   }
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  &--open {
+    background-color: transparent;
+
+    &::before {
+      background-color: $black;
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      background-color: $black;
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
   }
+
+  &--close {
+    background-color: $black;
+
+    &::before {
+      background-color: black;
+    }
+
+    &::after {
+      background-color: $black;
+    }
+  }
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-show {
+  display: block;
 }
