@@ -16,14 +16,15 @@
       <div class="main-header__wrapper">
         <a class="main-header__logo">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/header-logo.svg">
+            <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
             <img class="main-header__logo--mobile-cat" src="img/header-logo-mobile-cat.svg" width="33" height="38"
               alt="Логотип Кота Энерджи">
             <img class="main-header__logo--mobile" src="img/header-logo-mobile.svg" width="101" height="18"
               alt="Логотип текст">
           </picture>
         </a>
-        <button class="main-header__toggle" type="button"></button>
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
