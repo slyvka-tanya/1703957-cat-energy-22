@@ -87,6 +87,7 @@
     border-right: none;
     padding: 10px 0 0 33px;
     column-gap: 13px;
+    border-top: none;
   }
 }
 
@@ -222,25 +223,12 @@
   background-color: $line-gray-light;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 708px;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
     width: 245px;
     height: 289px;
-  }
-}
-
-.promo__img--tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    background-color: $line-gray-light;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }

@@ -147,18 +147,10 @@
   }
 }
 
-.catalog__image--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .catalog__image {
-  display: none;
-
   @media (min-width: $tablet-width) {
-    display: block;
     margin-top: -60px;
+
   }
 }
 
