@@ -62,12 +62,12 @@
     left: 0;
     width: 320px;
     height: 302px;
-    background-image: url("../img/index/hero-background-mobile@1x.png");
+    background-image: url("../img/index/hero-background-mobile@1x.jpg");
     background-size: 100% 302px;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/hero-background-mobile@2x.png");
+      background-image: url("../img/index/hero-background-mobile@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -81,11 +81,11 @@
       transform: translate(74%, -21%);
       width: 720px;
       height: 694px;
-      background-image: url("../img/index/hero-background-desktop@1z.png");
+      background-image: url("../img/index/hero-background-desktop@1x.jpg");
       background-size: 720px 694px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/hero-background-desktop@2x.png");
+        background-image: url("../img/index/hero-background-desktop@2x.jpg");
       }
     }
   }
