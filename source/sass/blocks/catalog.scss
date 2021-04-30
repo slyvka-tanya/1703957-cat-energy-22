@@ -147,18 +147,18 @@
   }
 }
 
-.catalog__image--mobile {
+.catalog__image {
   @media (min-width: $tablet-width) {
-    display: none;
+    margin-top: -60px;
+    width: 163px;
+    height: 174px;
   }
 }
 
-.catalog__image {
-  display: none;
-
+.catalog__image--big {
   @media (min-width: $tablet-width) {
-    display: block;
-    margin-top: -60px;
+    width: 168px;
+    height: 200px;
   }
 }
 
@@ -174,7 +174,7 @@
   @media (min-width: $desktop-width) {
     width: 168px;
     height: 40px;
-    margin-left: 11px;
+    margin-left: 6px;
   }
 }
 
@@ -200,8 +200,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 21px;
     line-height: 21px;
-    margin-top: 11px;
-    margin-bottom: 17px;
+    margin-top: 6px;
+    margin-bottom: 15px;
   }
 }
 

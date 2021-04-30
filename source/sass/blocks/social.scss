@@ -19,14 +19,12 @@
   justify-content: center;
   margin-bottom: 30px;
 
-  & img {
-    &:hover {
-      opacity: 80%;
-    }
+  &:hover {
+    opacity: 80%;
+  }
 
-    &:active {
-      opacity: 60%;
-    }
+  &:active {
+    opacity: 60%;
   }
 
   @media (min-width: $tablet-width) {
@@ -43,7 +41,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 24px 61px 16px 56px;
+  padding: 24px 61px 19px 56px;
   border-top: 1px solid $line-gray-light;
   border-bottom: 1px solid $line-gray-light;
 
@@ -56,14 +54,18 @@
   }
 }
 
-.social__link-icon {
+.social__link {
   &:hover {
-    fill: $basic_green;
+    .social__link-icon {
+      fill: $basic_green;
+    }
   }
 
   &:active {
-    fill: $basic_green;
-    fill-opacity: 0.3;
+    .social__link-icon {
+      fill: $basic_green;
+      fill-opacity: 0.3;
+    }
   }
 }
 
@@ -86,9 +88,28 @@
 }
 
 .social__link-icon--facebook {
+  stroke: #666666;
+
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 29px;
+  }
+}
+
+.social__link--facebook {
+  &:hover {
+    & .social__link-icon--facebook-path {
+      stroke: $basic_green;
+      fill: #f2f2f2;
+    }
+  }
+
+  &:active {
+    & .facebook-path {
+      stroke: $basic_green;
+      fill: #f2f2f2;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -116,6 +137,8 @@
 }
 
 .social__site-logo {
+  fill: #666666;
+
   &:hover {
     fill: $basic_green;
   }

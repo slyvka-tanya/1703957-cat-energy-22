@@ -56,6 +56,14 @@
   }
 }
 
+.main-footer__maps--wrapper {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
 .main-footer__maps {
   width: 100%;
   height: 362px;

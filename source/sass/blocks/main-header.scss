@@ -5,7 +5,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 93px 24px 112px;
+    padding: 45px 93px 24px 110px;
   }
 }
 
@@ -23,60 +23,23 @@
 }
 
 .main-header__logo {
-  width: 190px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.main-header__toggle {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  border: none;
-  background-color: $white;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 25px;
-    background-color: $black;
-    transform: translate(-50%, -50%) rotate(45deg);
+  &:hover {
+    opacity: 80%;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 25px;
-    background-color: $black;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
+  &:active {
+    opacity: 60%;
   }
 }
 
-.main-header__logo--tablet {
-  display: none;
+.main-header__logo--mobile-cat {
+  margin-right: 56px;
 
   @media (min-width: $tablet-width) {
-    display: block;
-
-    &:hover {
-      opacity: 80%;
-    }
-
-    &:active {
-      opacity: 60%;
-    }
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,16 +48,83 @@
   }
 }
 
-.main-header__logo--mobile {
-  &:hover {
-    opacity: 80%;
-  }
+picture {
+  display: flex;
+  align-items: center;
+}
 
-  &:active {
-    opacity: 60%;
-  }
+.main-header__logo--mobile {
+  display: flex;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__toggle {
+  position: relative;
+  width: 24px;
+  height: 1px;
+  border: none;
+  margin-top: -2px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0;
+    width: 24px;
+    height: 1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    left: 0;
+    width: 24px;
+    height: 1px;
+  }
+
+  &--open {
+    background-color: transparent;
+
+    &::before {
+      background-color: $black;
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      background-color: $black;
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--close {
+    background-color: $black;
+
+    &::before {
+      background-color: $black;
+    }
+
+    &::after {
+      background-color: $black;
+    }
+  }
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-show {
+  display: block;
 }
