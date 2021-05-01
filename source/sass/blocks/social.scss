@@ -93,13 +93,16 @@
 }
 
 .social__link {
+
   &:hover {
+
     .social__link-icon--facebook {
       stroke: $basic_green;
     }
   }
 
   &:active {
+
     .social__link-icon--facebook {
       opacity: 0.3;
       stroke: $basic_green;
