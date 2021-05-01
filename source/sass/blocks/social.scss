@@ -57,21 +57,19 @@
 .social__link {
   &:hover {
     .social__link-icon {
-      fill: $basic_green;
+      stroke: $basic_green;
     }
   }
 
   &:active {
     .social__link-icon {
-      fill: $basic_green;
-      fill-opacity: 0.3;
+      opacity: 0.3;
+      stroke: $basic_green;
     }
   }
 }
 
 .social__link-icon--vkontakte {
-  fill: #666666;
-
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 22px;
@@ -79,8 +77,6 @@
 }
 
 .social__link-icon--instagram {
-  fill: #666666;
-
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
@@ -96,19 +92,17 @@
   }
 }
 
-.social__link--facebook {
+.social__link {
   &:hover {
-    & .social__link-icon--facebook-path {
+    .social__link-icon--facebook {
       stroke: $basic_green;
-      fill: #f2f2f2;
     }
   }
 
   &:active {
-    & .facebook-path {
-      stroke: $basic_green;
-      fill: #f2f2f2;
+    .social__link-icon--facebook {
       opacity: 0.3;
+      stroke: $basic_green;
     }
   }
 }
