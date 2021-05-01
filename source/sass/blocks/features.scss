@@ -193,8 +193,10 @@
         margin-left: 22px;
       }
     }
+
     &:active {
       opacity: 0.3;
+
       & .features__link--icon {
         width: 46px;
       }
