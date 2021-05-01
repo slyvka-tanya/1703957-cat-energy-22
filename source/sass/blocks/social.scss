@@ -59,10 +59,19 @@
     .social__link-icon {
       stroke: $basic_green;
     }
+
+    .social__link-icon--facebook {
+      stroke: $basic_green;
+    }
   }
 
   &:active {
     .social__link-icon {
+      opacity: 0.3;
+      stroke: $basic_green;
+    }
+
+    .social__link-icon--facebook {
       opacity: 0.3;
       stroke: $basic_green;
     }
@@ -89,24 +98,6 @@
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 29px;
-  }
-}
-
-.social__link {
-
-  &:hover {
-
-    .social__link-icon--facebook {
-      stroke: $basic_green;
-    }
-  }
-
-  &:active {
-
-    .social__link-icon--facebook {
-      opacity: 0.3;
-      stroke: $basic_green;
-    }
   }
 }
 
