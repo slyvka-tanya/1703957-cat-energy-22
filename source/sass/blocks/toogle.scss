@@ -32,7 +32,7 @@
   margin-top: 3px;
   width: 84px;
   height: 12px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $gray_checkbox;
   border-radius: 6px;
   background-color: $white;
 
@@ -42,7 +42,7 @@
     margin-top: 12px;
     width: 428px;
     height: 6px;
-    background-color: #dcdcdc;
+    background-color: $white-slider;
   }
 }
 
@@ -61,7 +61,7 @@
     left: 45%;
     border-radius: 50%;
     background-color: $white;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray_checkbox;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 
     &:hover {
