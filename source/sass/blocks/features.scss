@@ -161,54 +161,45 @@
   }
 }
 
+.features__link--icon {
+  width: 40px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 38px;
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
+}
+
 .features__link {
   position: relative;
-  display: block;
   padding: 20px 20px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
-    width: 154px;
+
+    &:hover {
+      & .features__link--icon {
+        width: 46px;
+        margin-left: 22px;
+      }
+    }
 
     &:active {
       opacity: 0.3;
-    }
-  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 23px;
-    left: 121px;
-    width: 32px;
-    height: 12px;
-    background: url("../img/index/icon-arrow-link.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      bottom: 5px;
-      left: 130px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 7px;
-      left: 133px;
-    }
-  }
-
-  &:hover {
-    &::after {
-      background: url("../img/index/icon-arrow-link-hover.svg");
-    }
-  }
-
-  &:active {
-    &::after {
-      background: url("../img/index/icon-arrow-link-hover.svg");
-      opacity: 0.3;
+      & .features__link--icon {
+        width: 46px;
+      }
     }
   }
 }

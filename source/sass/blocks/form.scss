@@ -86,7 +86,7 @@
 }
 
 .form__block--padding {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $line-gray;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
@@ -190,7 +190,7 @@
 
   &:hover {
     &::after {
-      border: 1px solid #bababa;
+      border: 1px solid $gray_checkbox-dark;
     }
   }
 
@@ -494,8 +494,8 @@
   left: 0;
   width: 28px;
   height: 28px;
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
+  background-color: $white;
+  border: 1px solid $gray_checkbox;
 
   @media (min-width: $tablet-width) {
     width: 38px;

@@ -14,7 +14,7 @@
 
 .example--desktop {
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
+    background-color: $gray_light_back;
     display: flex;
     justify-content: space-between;
     padding: 14px 100px 71px 110px;
@@ -156,7 +156,7 @@
     text-transform: uppercase;
     margin: 0;
     padding: 14px 42px 15px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray_checkbox;
     border-radius: 3px;
 
     @media (min-width: $tablet-width) {
@@ -184,7 +184,7 @@
     width: 82px;
     text-align: center;
     margin-top: -8px;
-    background-color: #eaeaea;
+    background-color: $gray_back;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
@@ -195,7 +195,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-color: #f2f2f2;
+      background-color: $gray_light_back;
     }
   }
 

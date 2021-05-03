@@ -4,7 +4,7 @@
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 30px;
+    padding: 54px 30px;
     display: flex;
     justify-content: space-between;
   }
@@ -41,7 +41,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 24px 61px 19px 56px;
+  padding: 23px 65px 19px 56px;
   border-top: 1px solid $line-gray-light;
   border-bottom: 1px solid $line-gray-light;
 
@@ -57,21 +57,28 @@
 .social__link {
   &:hover {
     .social__link-icon {
-      fill: $basic_green;
+      stroke: $basic_green;
+    }
+
+    .social__link-icon--facebook {
+      stroke: $basic_green;
     }
   }
 
   &:active {
     .social__link-icon {
-      fill: $basic_green;
-      fill-opacity: 0.3;
+      opacity: 0.3;
+      stroke: $basic_green;
+    }
+
+    .social__link-icon--facebook {
+      opacity: 0.3;
+      stroke: $basic_green;
     }
   }
 }
 
 .social__link-icon--vkontakte {
-  fill: #666666;
-
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 22px;
@@ -79,8 +86,6 @@
 }
 
 .social__link-icon--instagram {
-  fill: #666666;
-
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
@@ -88,28 +93,11 @@
 }
 
 .social__link-icon--facebook {
-  stroke: #666666;
+  stroke: $stroke-icon;
 
   @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 29px;
-  }
-}
-
-.social__link--facebook {
-  &:hover {
-    & .social__link-icon--facebook-path {
-      stroke: $basic_green;
-      fill: #f2f2f2;
-    }
-  }
-
-  &:active {
-    & .facebook-path {
-      stroke: $basic_green;
-      fill: #f2f2f2;
-      opacity: 0.3;
-    }
+    width: 25px;
+    height: 33px;
   }
 }
 
@@ -125,6 +113,10 @@
   }
 }
 
+.social__site-logo {
+  fill: $stroke-icon;
+}
+
 .social__site-link {
   font-family: $font-arial;
   line-height: 18px;
@@ -133,24 +125,21 @@
   min-width: 280px;
   justify-content: space-between;
 
+  &:hover {
+    & .social__site-logo {
+      fill: $basic_green;
+    }
+  }
+
   &:active {
     opacity: 0.3;
+
+    & .social__site-logo {
+      fill: $basic_green;
+    }
   }
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
-  }
-}
-
-.social__site-logo {
-  fill: #666666;
-
-  &:hover {
-    fill: $basic_green;
-  }
-
-  &:active {
-    fill: $basic_green;
-    opacity: 0.3;
   }
 }

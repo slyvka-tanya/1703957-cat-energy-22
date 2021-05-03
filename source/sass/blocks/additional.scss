@@ -76,7 +76,7 @@
   border-bottom: 1px solid $gray_checkbox;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray_checkbox;
     padding: 11px 37px 29px;
     border-top: none;
   }
@@ -164,6 +164,7 @@
 .promo {
   position: relative;
   padding: 38px 20px 35px;
+  background-color: $gray_light_back;
 
   &::after {
     position: absolute;

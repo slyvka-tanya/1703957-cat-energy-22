@@ -69,7 +69,7 @@
   @media (min-width: $tablet-width) {
     width: 249px;
     padding: 0 38px;
-    background-color: #f2f2f2;
+    background-color: $gray_light_back;
     height: 430px;
     align-items: center;
     justify-content: center;
@@ -78,8 +78,8 @@
     grid-template-rows: 125px 228px 71px;
 
     &:last-child {
-      background-color: #ffffff;
-      border: 2px solid #f2f2f2;
+      background-color: $white;
+      border: 2px solid $gray_light_back;
 
       @media (min-width: $tablet-width) {
         width: 245px;
