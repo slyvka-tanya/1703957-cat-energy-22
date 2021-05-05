@@ -93,6 +93,7 @@
 }
 
 .social__link-icon--facebook {
+  fill: transparent;
   stroke: $stroke-icon;
 
   @media (min-width: $tablet-width) {
