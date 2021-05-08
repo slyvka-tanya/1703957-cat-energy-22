@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.min.js" as="script">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
@@ -15,9 +19,7 @@
 </head>
 
 <body>
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+
   <div class="wrapper">
     <header class="main-header">
       <div class="main-header__wrapper">
@@ -31,8 +33,10 @@
           <img class="main-header__logo--mobile" src="img/header-logo-mobile.svg" width="101" height="18"
             alt="Логотип текст">
         </a>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
-            меню</span></button>
+        <div class="main-header__toggle">
+          <button class="main-header__button" type="button"><span class="visually-hidden">Открыть/закрыть
+              меню</span></button>
+        </div>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -78,7 +82,7 @@
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="features__link" href="catalog.html">Каталог SLIM <svg class="features__link--icon" width="24"
                 height="12" viewBox="0 0 40 12">
-                <use xlink:href="#icon-arrow-link"></use>
+                <use xlink:href="img/sprite.svg#icon-arrow-link"></use>
               </svg>
             </a>
           </li>
@@ -88,7 +92,7 @@
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="features__link" href="catalog.html">Каталог PRO <svg class="features__link--icon" width="24"
                 height="12" viewBox="0 0 40 12">
-                <use xlink:href="#icon-arrow-link"></use>
+                <use xlink:href="img/sprite.svg#icon-arrow-link"></use>
               </svg>
             </a>
           </li>
@@ -199,30 +203,30 @@
         <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
         <a class="social__img" href="index.html">
           <svg width="128" height="24" viewBox="0 0 128 24">
-            <use xlink:href="#footer-logo"></use>
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <div class="social__link-wrapper">
           <a class="social__link" href="#">
             <svg class="social__link-icon social__link-icon--vkontakte" width="23" height="16" viewBox="0 0 23 16">
-              <use fill="#666666" xlink:href="#icon_vkontakte"></use>
+              <use fill="#666666" xlink:href="img/sprite.svg#icon_vkontakte"></use>
             </svg>
           </a>
           <a class="social__link" href="#">
             <svg class="social__link-icon social__link-icon--instagram" width="16" height="16" viewBox="0 0 16 16">
-              <use fill="#666666" xlink:href="#icon_instagram"></use>
+              <use fill="#666666" xlink:href="img/sprite.svg#icon_instagram"></use>
             </svg>
           </a>
           <a class="social__link social__link--facebook" href="#">
             <svg class="social__link-icon social__link-icon--facebook" width="18" height="18" viewBox="0 0 18 20">
-              <use xlink:href="#icon_facebook"></use>
+              <use xlink:href="img/sprite.svg#icon_facebook"></use>
             </svg>
           </a>
         </div>
         <div class="social__site">
           <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <svg
               class="social__site-logo" width="27" height="34">
-              <use xlink:href="#logo_html"></use>
+              <use xlink:href="img/sprite.svg#logo_html"></use>
             </svg>
           </a>
         </div>

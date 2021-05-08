@@ -63,6 +63,7 @@ picture {
   }
 }
 
+
 .main-header__toggle {
   position: relative;
   width: 24px;
@@ -120,6 +121,16 @@ picture {
       background-color: $black;
     }
   }
+}
+
+.main-header__button {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
 }
 
 .modal-close {
