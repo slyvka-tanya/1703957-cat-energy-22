@@ -8,7 +8,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 112px;
-    padding-bottom: 73px;
+    padding-bottom: 74px;
   }
 }
 
@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-top: 43px;
-    padding-bottom: 57px;
+    padding-bottom: 55px;
   }
 }
 
@@ -98,7 +98,7 @@
   }
 }
 
-.form__block div {
+.form__block--margin {
   display: flex;
   margin-bottom: 14px;
 
@@ -141,14 +141,14 @@
 }
 
 .form__block--comment {
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 43px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 43px;
+    margin-bottom: 66px;
   }
 }
 
@@ -373,43 +373,85 @@
   }
 }
 
-.form__contact--email {
-  &::after {
-    position: absolute;
-    content: "";
-    top: 17px;
-    right: 16px;
-    width: 18px;
-    height: 13px;
-    background-image: url("../img/form/icon_email.svg");
-    z-index: 1;
+.form__field--wrapper {
+  position: relative;
+  margin: 0;
 
-    @media (min-width: $tablet-width) {
-      top: 19px;
-      right: 18px;
+  &:focus {
+    & .form__field--tel-img {
+      fill: $basic_green;
+    }
+
+    & .form__field--email-img {
+      stroke: $basic_green;
+    }
+  }
+
+  &:invalid {
+    & .form__field--tel-img {
+      fill: $red_invalid;
+    }
+
+    & .form__field--email-img {
+      fill: $red_invalid;
     }
   }
 }
 
-.form__contact--tel {
-  &::after {
+.form__field--email {
+  width: 190px;
+
+  @media (min-width: $tablet-width) {
+    width: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 452px;
+    padding: 9px 43px 13px 17px;
+  }
+
+  &-img {
     position: absolute;
-    content: "";
+    top: 17px;
+    left: 85%;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      left: 94%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 93%;
+    }
+  }
+}
+
+.form__field--tel {
+  width: 173px;
+
+  @media (min-width: $tablet-width) {
+    width: 499px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    padding: 8px 14px 13px 26px;
+  }
+
+  &-img {
+    position: absolute;
     top: 13px;
-    right: 13px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/form/icon_phone.svg");
-    z-index: 1;
+    left: 85%;
 
     @media (min-width: $tablet-width) {
       top: 16px;
-      right: 16px;
+      left: 93%;
     }
   }
 }
 
 .form__field--big {
+  width: 256px;
   padding: 9px 9px 122px 14px;
   margin-top: 3px;
   font-size: 16px;
@@ -417,9 +459,14 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
+    width: 602px;
     padding: 7px 9px 134px 18px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1191px;
   }
 }
 
