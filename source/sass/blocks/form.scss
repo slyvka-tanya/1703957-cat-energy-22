@@ -166,18 +166,6 @@
   }
 }
 
-.form__field--email {
-  @media (min-width: $desktop-width) {
-    padding: 9px 43px 13px 17px;
-  }
-}
-
-.form__field--tel {
-  @media (min-width: $desktop-width) {
-    padding: 8px 14px 13px 26px;
-  }
-}
-
 .form__list--checkbox {
   @media (min-width: $tablet-width) {
     padding: 29px 0 7px 41px;
@@ -412,12 +400,14 @@
 
 .form__field--email {
   width: 190px;
+
   @media (min-width: $tablet-width) {
     width: 518px;
   }
 
   @media (min-width: $desktop-width) {
     width: 452px;
+    padding: 9px 43px 13px 17px;
   }
 
   &-img {
@@ -429,6 +419,7 @@
       top: 20px;
       left: 94%;
     }
+
     @media (min-width: $desktop-width) {
       left: 93%;
     }
@@ -437,17 +428,21 @@
 
 .form__field--tel {
   width: 173px;
+
   @media (min-width: $tablet-width) {
     width: 499px;
   }
+
   @media (min-width: $desktop-width) {
     width: 430px;
+    padding: 8px 14px 13px 26px;
   }
 
   &-img {
     position: absolute;
     top: 13px;
     left: 85%;
+
     @media (min-width: $tablet-width) {
       top: 16px;
       left: 93%;
