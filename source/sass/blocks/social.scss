@@ -41,7 +41,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 23px 65px 19px 56px;
+  padding: 23px 65px 21px 56px;
   border-top: 1px solid $line-gray-light;
   border-bottom: 1px solid $line-gray-light;
 
@@ -105,7 +105,7 @@
 .social__site {
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

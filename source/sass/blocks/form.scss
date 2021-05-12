@@ -87,7 +87,7 @@
 
 .form__block--padding {
   border-bottom: 1px solid $line-gray;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -154,7 +154,7 @@
 
 .form__block--add {
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 }
 
@@ -187,6 +187,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &:hover {
     &::after {
@@ -248,6 +249,7 @@
 }
 
 .form__field {
+  height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -270,6 +272,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 30px;
     padding: 9px 13px 10px 23px;
     font-size: 20px;
     line-height: 30px;
@@ -353,11 +356,11 @@
 
 .form__subtitle--add-line {
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 
   &::after {
@@ -506,7 +509,7 @@
 .form__button {
   font-size: 16px;
   line-height: 20px;
-  margin-top: 41px;
+  margin-top: 39px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

@@ -210,12 +210,14 @@
     bottom: 145px;
     left: 252px;
     padding: 0 181px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 42px;
     left: 0;
     padding: 0 32px 0 44px;
+    text-align: center;
   }
 }
 

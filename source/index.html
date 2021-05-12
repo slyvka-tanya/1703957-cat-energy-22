@@ -11,6 +11,7 @@
   <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/normalise.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -62,7 +63,7 @@
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/index/hero-image-eat-tablet@1x.webp 1x, img/index/hero-image-eat-tablet@2x.webp 2x">
             <source type="image/webp"
-              src="img/index/hero-image-eat-mobile@1x.webp 1x, img/index/hero-image-eat-mobile@2x.webp 2x">
+              srcset="img/index/hero-image-eat-mobile@1x.webp 1x, img/index/hero-image-eat-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="img/index/hero-image-eat-desktop@1x.png 1x, img/index/hero-image-eat-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -119,9 +120,9 @@
           </li>
         </ul>
       </section>
-      <section class="example example--wrapper">
+      <section class="example">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example--desktop">
+        <div class="example__block">
           <div class="example__column">
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
               Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
@@ -149,7 +150,7 @@
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/index/example-before-tablet@1x.webp 1x, img/index/example-before-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  src="img/index/example-before-mobile@1x.webp 1x, img/index/example-before-mobile@2x.webp 2x">
+                  srcset="img/index/example-before-mobile@1x.webp 1x, img/index/example-before-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)"
                   srcset="img/index/example-before-desktop@1x.png 1x, img/index/example-before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)"
@@ -163,7 +164,7 @@
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/index/example-after-tablet@1x.webp 1x, img/index/example-after-tablet@2x.webp 2x">
                 <source type="image/webp"
-                  src="img/index/example-after-mobile@1x.webp 1x, img/index/example-after-mobile@2x.webp 2x">
+                  srcset="img/index/example-after-mobile@1x.webp 1x, img/index/example-after-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)"
                   srcset="img/index/example-after-desktop@1x.png 1x, img/index/example-after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)"
@@ -175,7 +176,8 @@
             <div class="toogle">
               <span class="toogle__text">было</span>
               <div class="toogle__slide">
-                <div class="toogle__slider"></div>
+                <button  class="toogle__slider" type="button">
+              </button>
               </div>
               <span class="toogle__text">стало</span>
             </div>
