@@ -164,7 +164,7 @@
 
 .catalog__button {
   @media (min-width: $tablet-width) {
-    width: 248px;
+    width: 251px;
     height: 39px;
     font-size: 16px;
     margin-top: 0;
@@ -284,6 +284,7 @@
 
     @media (min-width: $tablet-width) {
       height: 60px;
+      top: 19%;
     }
   }
 

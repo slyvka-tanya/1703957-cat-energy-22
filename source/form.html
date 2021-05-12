@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
   <div class="wrapper">
     <header class="main-header">
       <div class="main-header__wrapper">
@@ -55,15 +54,15 @@
           <p class="form__caption">Заполните анкету, и мы подберем <br> програmму питания для вашего кота</p>
           <div class="form__block--wrapper">
             <fieldset class="form__block form__block--padding form__block--name">
-              <div>
+              <div class="form__block--margin">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__field" id="name" type="text" name="name" placeholder="БАРСИК">
               </div>
-              <div>
+              <div class="form__block--margin">
                 <label class="form__label" for="weight">Вес (кг):*</label>
                 <input class="form__field" id="weight" type="text" name="name" placeholder="7">
               </div>
-              <div>
+              <div class="form__block--margin">
                 <label class="form__label" for="age">Возраст(лет):*</label>
                 <input class="form__field" id="age" type="text" name="name" placeholder="7">
               </div>
@@ -91,13 +90,25 @@
           <fieldset class="form__block form__block--contact">
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
             <div class="form__block--wrapper">
-              <div class="form__contact form__contact--email">
+              <div class="form__block--margin form__contact form__contact--email">
                 <label class="form__label" for="email">E-mail:*</label>
-                <input class="form__field" id="email" type="text" name="name" placeholder="kuklachev@gmail.com">
+                <div class="form__field--wrapper">
+                  <input class="form__field form__field--email" id="email" type="text" name="name"
+                    placeholder="kuklachev@gmail.com">
+                  <svg class="form__field--email-img" width="18" height="13" viewBox="0 0 18 13">
+                    <use xlink:href="img/sprite.svg#icon_email"></use>
+                  </svg>
+                </div>
               </div>
-              <div class="form__contact form__contact--tel">
+              <div class="form__block--margin form__contact form__contact--tel">
                 <label class="form__label" for="tel">Телефон:*</label>
-                <input class="form__field" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+                <div class="form__field--wrapper">
+                  <input class="form__field form__field--tel" id="tel" type="tel" name="tel"
+                    placeholder="8 (960) 900-60-90">
+                  <svg class="form__field--tel-img" width="20" height="20" viewBox="0 0 20 20">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -138,7 +149,7 @@
     <footer class="main-footer">
       <section class="main-footer__address">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="main-footer__address-wrapper address-wrapper address-wrapper--background">
+        <div class="main-footer__address-wrapper address-wrapper">
           <p class="address-wrapper__title">Приглашаем <br> к сотрудничеству дилеров!</p>
           <div class="address-wrapper__text-wrapper">
             <p class="address-wrapper__text">ул. Большая Конюшенная, д. 19/8</p>
