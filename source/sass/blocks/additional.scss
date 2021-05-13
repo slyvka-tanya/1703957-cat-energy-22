@@ -149,6 +149,8 @@
 }
 
 .additional__button {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     width: 632px;
     height: 38px;
@@ -208,7 +210,7 @@
   @media (min-width: $tablet-width) {
     bottom: 145px;
     left: 252px;
-    padding: 0 181px;
+    padding: 0 150px 0 201px;
     text-align: left;
   }
 

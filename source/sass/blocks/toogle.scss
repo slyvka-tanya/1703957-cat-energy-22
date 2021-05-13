@@ -29,6 +29,7 @@
 }
 
 .toogle__slide {
+  position: relative;
   margin-top: 3px;
   width: 84px;
   height: 12px;
@@ -47,6 +48,8 @@
 }
 
 .toogle__slider {
+  position: absolute;
+  border: none;
   width: 35px;
   height: 6px;
   border-radius: 6px;
@@ -56,8 +59,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     left: 45%;
     border-radius: 50%;
     background-color: $white;
@@ -76,8 +79,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 12px;
+      left: 11px;
       width: 8px;
       height: 8px;
       background-color: $basic_green;

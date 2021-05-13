@@ -29,7 +29,7 @@
 .address-wrapper {
   display: flex;
   padding: 29px 20px 26px;
-  background-color: $gray_light_back;
+  background-color: $white;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
@@ -46,7 +46,11 @@
 }
 
 .address-wrapper--background {
-  background-color: $white;
+  background-color: $gray_light_back;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .address-wrapper__title {
