@@ -14,13 +14,13 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
-ul {
+.list-style-clear {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-a {
+.link-style-clear {
   text-decoration: none;
   color: black;
   cursor: pointer;

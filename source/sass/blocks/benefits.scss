@@ -1,14 +1,24 @@
 .benefits {
   margin-bottom: 46px;
   padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 0;
     margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 21px 80px;
+    width: 1360px;
+    margin: 0 auto;
+  }
+}
+
+.benefits--wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 21px 40px;
   }
 }
 
@@ -112,98 +122,106 @@
   }
 }
 
-.benefits__text--leaf-icon::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-size: 30px 32px;
-  display: block;
-  background-color: $basic_green;
-  background-image: url("../img/index/benefits-icon_leaf.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.benefits__text--leaf-icon {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-size: 30px 32px;
+    display: block;
+    background-color: $basic_green;
+    background-image: url("../img/index/benefits-icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
 
-  @media (min-width: $desktop-width) {
-    top: 0;
-  }
-}
-
-.benefits__text--tub-icon::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-size: 29px 31px;
-  display: block;
-  background-color: $basic_green;
-  background-image: url("../img/index/benefits-icon_tub.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
-.benefits__text--eat-icon::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-size: 25px 30px;
-  display: block;
-  background-color: $basic_green;
-  background-image: url("../img/index/benefits-icon_eat.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.benefits__text--tub-icon {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-size: 29px 31px;
+    display: block;
+    background-color: $basic_green;
+    background-image: url("../img/index/benefits-icon_tub.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
 
-  @media (min-width: $desktop-width) {
-    top: 0;
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
-.benefits__text--alarm-icon::before {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-size: 32px 33px;
-  display: block;
-  background-color: $basic_green;
-  background-image: url("../img/index/benefits-icon_alarm.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.benefits__text--eat-icon {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-size: 25px 30px;
+    display: block;
+    background-color: $basic_green;
+    background-image: url("../img/index/benefits-icon_eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    top: 0;
+.benefits__text--alarm-icon {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-size: 32px 33px;
+    display: block;
+    background-color: $basic_green;
+    background-image: url("../img/index/benefits-icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }

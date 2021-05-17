@@ -22,15 +22,15 @@
   <div class="wrapper">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
+        <a class="link-style-clear main-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
-            <img class="main-header__logo--mobile-cat" src="img/header-logo-mobile-cat.svg" width="33" height="38"
-              alt="Логотип Кота Энерджи">
+            <img class="main-header__img main-header__img--mobile-cat" src="img/header-logo-mobile-cat.svg" width="33"
+              height="38" alt="Логотип Кота Энерджи">
           </picture>
-          <img class="main-header__logo--mobile" src="img/header-logo-mobile.svg" width="101" height="18"
-            alt="Логотип текст">
+          <img class="main-header__img main-header__img--mobile" src="img/header-logo-mobile.svg" width="101"
+            height="18" alt="Логотип текст">
         </a>
         <div class="main-header__toggle">
           <button class="main-header__button" type="button"><span class="visually-hidden">Открыть/закрыть
@@ -38,10 +38,10 @@
         </div>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная </a> </li>
-          <li class="main-nav__item"><a href="catalog.html"> Каталог продукции</a> </li>
-          <li class="main-nav__item main-nav__item--active"><a>Подбор программы </a> </li>
+        <ul class="list-style-clear main-nav__list">
+          <li class="main-nav__item"><a class="link-style-clear" href="index.html">Главная </a> </li>
+          <li class="main-nav__item"><a class="link-style-clear" href="catalog.html"> Каталог продукции</a> </li>
+          <li class="main-nav__item main-nav__item--active"><a class="link-style-clear">Подбор программы </a> </li>
         </ul>
       </nav>
     </header>
@@ -59,29 +59,30 @@
               </div>
               <div class="form__block--margin">
                 <label class="form__label" for="weight">Вес (кг):*</label>
-                <input class="form__field" id="weight" type="text" name="name" placeholder="7">
+                <input class="form__field form__field--margin" id="weight" type="text" name="name" placeholder="7">
               </div>
               <div class="form__block--margin">
-                <label class="form__label" for="age">Возраст(лет):*</label>
+                <label class="form__label" for="age">Возраст (лет):*</label>
                 <input class="form__field" id="age" type="text" name="name" placeholder="7">
               </div>
             </fieldset>
             <fieldset class="form__block form__block--padding form__block--checkbox">
-              <ul class="form__list form__list--checkbox">
+              <ul class="list-style-clear form__list form__list--checkbox">
                 <li class="form__item">
-                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="slim"
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="slim" checked>
-                  <label class="form__label form__label--sircle" for="slim">Похудение</label>
+                  <label class="form__label form__label--circle" for="slim" tabindex="0">Похудение</label>
                 </li>
                 <li class="form__item">
-                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="fat"
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="fat">
-                  <label class="form__label form__label--sircle" for="fat">Набор массы</label>
+                  <label class="form__label form__label--circle" for="fat" tabindex="0">Набор массы</label>
                 </li>
                 <li class="form__item">
-                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="checkbox" name="advice"
+                  <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="advice">
-                  <label class="form__label form__label--sircle" for="advice">Не знаю (нужен ваш совет)</label>
+                  <label class="form__label form__label--circle" for="advice" tabindex="0">Не знаю (нужен ваш
+                    совет)</label>
                 </li>
               </ul>
             </fieldset>
@@ -92,9 +93,9 @@
               <div class="form__block--margin form__contact form__contact--email">
                 <label class="form__label" for="email">E-mail:*</label>
                 <div class="form__field--wrapper">
-                  <input class="form__field form__field--email" id="email" type="text" name="name"
+                  <input class="form__field form__field--email" id="email" type="email" name="email"
                     placeholder="kuklachev@gmail.com">
-                  <svg class="form__field--email-img" width="18" height="13" viewBox="0 0 18 13">
+                  <svg class="form__img form__img--email" width="18" height="13" viewBox="0 0 18 13">
                     <use xlink:href="img/sprite.svg#icon_email"></use>
                   </svg>
                 </div>
@@ -104,7 +105,7 @@
                 <div class="form__field--wrapper">
                   <input class="form__field form__field--tel" id="tel" type="tel" name="tel"
                     placeholder="8 (960) 900-60-90">
-                  <svg class="form__field--tel-img" width="20" height="20" viewBox="0 0 20 20">
+                  <svg class="form__img form__img--tel" width="20" height="20" viewBox="0 0 20 20">
                     <use xlink:href="img/sprite.svg#icon_phone"></use>
                   </svg>
                 </div>
@@ -121,22 +122,22 @@
           </fieldset>
           <fieldset class="form__block form__block--add">
             <h2 class="form__subtitle form__subtitle--add-line">Дополнительно</h2>
-            <ul class="form__list form__list--tablet">
+            <ul class="list-style-clear form__list form__list--tablet">
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="sugar" checked>
-                <label class="form__label form__label--square" for="sugar">Сахарозаменитель</label>
+                <label class="form__label form__label--square" for="sugar" tabindex="0" >Сахарозаменитель</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="water">
-                <label class="form__label form__label--square" for="water">Питьевая вода</label>
+                <label class="form__label form__label--square" for="water" tabindex="0">Питьевая вода</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="milk">
-                <label class="form__label form__label--square" for="milk">Молоко</label>
+                <label class="form__label form__label--square" for="milk" tabindex="0">Молоко</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="vitamin">
-                <label class="form__label form__label--square" for="vitamin">Витамины</label>
+                <label class="form__label form__label--square" for="vitamin" tabindex="0">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -145,56 +146,59 @@
         </form>
       </section>
     </main>
+  </div>
     <footer class="main-footer">
       <section class="main-footer__address">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="main-footer__address-wrapper address-wrapper address-wrapper--background">
+
           <p class="address-wrapper__title">Приглашаем <br> к сотрудничеству дилеров!</p>
           <div class="address-wrapper__text-wrapper">
             <p class="address-wrapper__text">ул. Большая Конюшенная, д. 19/8</p>
             <p class="address-wrapper__text">Санкт-Петербург</p>
           </div>
+
         </div>
-        <div class="main-footer__maps--wrapper">
-          <iframe class="main-footer__maps"
+        <div class="main-footer__maps main-footer__maps--wrapper">
+          <iframe class="main-footer__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016.7054727971113!2d30.32012679706767!3d59.938759415982524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616838608523!5m2!1sru!2sua"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <section class="social">
         <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
-        <a class="social__img" href="index.html">
+        <a class="link-style-clear social__img" href="index.html">
           <svg width="128" height="24" viewBox="0 0 128 24">
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <div class="social__link-wrapper">
-          <a class="social__link" href="#">
+          <a class="link-style-clear social__link" href="#">
             <svg class="social__link-icon social__link-icon--vkontakte" width="23" height="16" viewBox="0 0 23 16">
               <use fill="#666666" xlink:href="img/sprite.svg#icon_vkontakte"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="link-style-clear social__link" href="#">
             <svg class="social__link-icon social__link-icon--instagram" width="16" height="16" viewBox="0 0 16 16">
               <use fill="#666666" xlink:href="img/sprite.svg#icon_instagram"></use>
             </svg>
           </a>
-          <a class="social__link social__link--facebook" href="#">
+          <a class="link-style-clear social__link social__link--facebook" href="#">
             <svg class="social__link-icon social__link-icon--facebook" width="18" height="18" viewBox="0 0 18 20">
               <use xlink:href="img/sprite.svg#icon_facebook"></use>
             </svg>
           </a>
         </div>
         <div class="social__site">
-          <a class="social__site-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <svg
-              class="social__site-logo" width="27" height="34">
+          <a class="link-style-clear social__site-link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <svg class="social__site-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo_html"></use>
             </svg>
           </a>
         </div>
       </section>
     </footer>
-  </div>
   <script src="js/script.min.js"></script>
 </body>
 

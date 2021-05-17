@@ -1,10 +1,15 @@
 .main-header {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
+    width: 708px;
     display: flex;
     padding: 18px 30px 25px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1237px;
     padding: 52px 93px 33px 110px;
     position: relative;
   }
@@ -35,7 +40,7 @@
   }
 }
 
-.main-header__logo--mobile-cat {
+.main-header__img--mobile-cat {
   margin-right: 56px;
 
   @media (min-width: $tablet-width) {
@@ -54,7 +59,7 @@ picture {
   align-items: center;
 }
 
-.main-header__logo--mobile {
+.main-header__img--mobile {
   display: flex;
   align-self: center;
 

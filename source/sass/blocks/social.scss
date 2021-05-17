@@ -4,13 +4,22 @@
   background-color: $gray_light_back;
 
   @media (min-width: $tablet-width) {
-    padding: 54px 30px;
+    padding: 54px 0;
     display: flex;
     justify-content: space-between;
   }
+}
+
+
+.social--wrapper {
+  @media (min-width: $tablet-width) {
+  width: 768px;
+  display: flex;
+  margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px;
+    width: 1440px;
   }
 }
 
@@ -30,10 +39,17 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     margin: 0;
+    margin: 0 110px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 291px 0 110px;
   }
 }
 
 .social__link-wrapper {
+  width: 160px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -44,9 +60,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 152px;
-    padding-left: 23px;
     border: none;
     align-items: center;
+    margin-right: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 264px;
   }
 }
 
@@ -99,13 +119,13 @@
 }
 
 .social__site {
-  display: flex;
-  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 163px;
+    width: 162px;
     align-items: center;
   }
 }
@@ -119,7 +139,6 @@
   line-height: 18px;
   align-items: center;
   display: flex;
-  min-width: 280px;
   justify-content: space-between;
 
   &:hover {

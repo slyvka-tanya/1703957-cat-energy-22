@@ -1,8 +1,81 @@
 .hero {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 317px;
+  position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 302px;
+      background-image: url("../img/index/hero-background-mobile@1x.jpg");
+      background-size: cover;
+      background-position: 64%;
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/hero-background-mobile@2x.jpg");
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 694px;
+        background-image: url("../img/index/hero-background-desktop@1x.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/hero-background-desktop@2x.jpg");
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 302px;
+      background-image: linear-gradient(to top, $gradient, $basic_green);
+      opacity: 85%;
+      z-index: -1;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 694px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
   }
-}
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    width: 100%;
+    margin-bottom: 317px;
+}}
 
 .hero__wrapper {
   position: relative;
@@ -20,7 +93,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 1121px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 189px;
+    padding-left: 80px;
   }
 }
 
@@ -52,67 +126,6 @@
   @media (min-width: $desktop-width) {
     padding-top: 78px;
     width: 575px;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 302px;
-    background-image: url("../img/index/hero-background-mobile@1x.jpg");
-    background-size: 100% 302px;
-    z-index: -1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/hero-background-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      top: 0;
-      left: 0;
-      transform: translate(100%, -21%);
-      width: 720px;
-      height: 694px;
-      background-image: url("../img/index/hero-background-desktop@1x.jpg");
-      background-size: 720px 694px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/hero-background-desktop@2x.jpg");
-      }
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 302px;
-    background-image: linear-gradient(to top, $gradient, $basic_green);
-    opacity: 85%;
-    background-size: 100% 302px;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      top: 0;
-      left: 0;
-      transform: translate(100%, -21%);
-      width: 720px;
-      height: 694px;
-    }
   }
 }
 
@@ -147,14 +160,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
+    margin-left: 80px;
     bottom: -52px;
   }
 }
 
 .hero__image {
-  margin-bottom: 3px;
   margin-left: 20px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -170,6 +183,7 @@
     top: -3px;
     width: 552px;
     height: 499px;
-    padding-left: 528px;
+    padding-left: 418px;
+    z-index: 2;
   }
 }
