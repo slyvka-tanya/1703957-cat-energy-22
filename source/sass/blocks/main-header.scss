@@ -54,11 +54,6 @@
   }
 }
 
-picture {
-  display: flex;
-  align-items: center;
-}
-
 .main-header__img--mobile {
   display: flex;
   align-self: center;
@@ -67,7 +62,6 @@ picture {
     display: none;
   }
 }
-
 
 .main-header__toggle {
   position: relative;
@@ -139,10 +133,4 @@ picture {
   cursor: pointer;
 }
 
-.modal-close {
-  display: none;
-}
 
-.modal-show {
-  display: block;
-}

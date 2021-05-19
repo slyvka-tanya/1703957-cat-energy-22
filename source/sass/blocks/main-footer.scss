@@ -1,0 +1,59 @@
+.main-footer__address {
+  position: relative;
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 42%;
+    width: 57px;
+    height: 53px;
+    background-image: url("../img/map-pin-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: 43%;
+      width: 113px;
+      height: 106px;
+      background-image: url("../img/map-pin-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27%;
+      left: 46%;
+      background-image: url("../img/map-pin-desktop.svg");
+    }
+  }
+}
+
+.main-footer__address--background {
+  background-color: $gray_light_back;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.main-footer__maps--wrapper {
+  background-image: url("../img/maps-background/maps-background-mobile.jpg");
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../img/maps-background/maps-background-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/maps-background/maps-background-desktop.jpg");
+  }
+}
+
+.main-footer__iframe {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

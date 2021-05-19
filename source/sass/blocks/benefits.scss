@@ -3,6 +3,7 @@
   padding: 0 20px;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -18,7 +19,7 @@
 
 .benefits--wrapper {
   @media (min-width: $desktop-width) {
-    margin: 0 0 21px 40px;
+    margin: 0 0 0 40px;
   }
 }
 
@@ -52,6 +53,7 @@
     flex-wrap: wrap;
     border: none;
     column-gap: 60px;
+    padding-bottom: 0;
   }
 }
 

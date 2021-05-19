@@ -86,3 +86,13 @@
     border-bottom: 2px solid $white;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+.main-nav--close {
+  display: none;
+}
+
+.main-nav--open {
+  display: block;
+}
+}
