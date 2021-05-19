@@ -75,7 +75,6 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
-  margin: 0;
   padding: 26px 20px 34px;
   margin: 0 auto;
   width: 280px;
@@ -89,7 +88,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     width: 1220px;
     padding: 74px 0 75px;
   }
