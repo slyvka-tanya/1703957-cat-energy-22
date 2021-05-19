@@ -88,11 +88,11 @@
 }
 
 @media (max-width: $tablet-width - 1) {
-.main-nav--close {
-  display: none;
-}
+  .main-nav--close {
+    display: none;
+  }
 
-.main-nav--open {
-  display: block;
-}
+  .main-nav--open {
+    display: block;
+  }
 }

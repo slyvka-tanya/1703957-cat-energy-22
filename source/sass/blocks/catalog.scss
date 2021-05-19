@@ -190,6 +190,7 @@
 
   &--big {
     margin-top: 12px;
+
     @media (min-width: $tablet-width) {
       margin-top: 25px;
     }
@@ -276,7 +277,6 @@
     line-height: 18px;
     padding: 0 10px;
     text-align: center;
-    margin: 0;
     margin: 1px 0 48px;
   }
 
