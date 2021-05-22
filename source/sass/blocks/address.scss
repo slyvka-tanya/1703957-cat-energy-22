@@ -13,8 +13,10 @@
   @media (min-width: $desktop-width) {
     background-color: $white;
     position: absolute;
-    transform: translate(110px, 95px);
-    padding: 63px 85px 44px 76px;
+    top: 48%;
+    left: calc(50% - 610px);
+    transform: translate(0, -50%);
+    padding: 66px 85px 41px 76px;
     width: 409px;
     max-height: 105px;
     overflow: auto;

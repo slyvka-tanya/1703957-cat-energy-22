@@ -51,17 +51,17 @@
         <h2 class="visually-hidden">Анкета</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p class="form__caption">Заполните анкету, и мы подберем <br> програmму питания для вашего кота</p>
-          <div class="form__block--wrapper">
+          <div class="form__main-info">
             <fieldset class="form__block form__block--padding form__block--name">
-              <div class="form__block--margin">
+              <div class="form__field-wrap">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__field" id="name" type="text" name="name" placeholder="БАРСИК">
               </div>
-              <div class="form__block--margin">
+              <div class="form__field-wrap">
                 <label class="form__label" for="weight">Вес (кг):*</label>
                 <input class="form__field form__field--margin" id="weight" type="text" name="name" placeholder="7">
               </div>
-              <div class="form__block--margin">
+              <div class="form__field-wrap">
                 <label class="form__label" for="age">Возраст (лет):</label>
                 <input class="form__field" id="age" type="text" name="name" placeholder="7">
               </div>
@@ -71,17 +71,17 @@
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="slim" checked>
-                  <label class="form__label form__label--circle" for="slim" tabindex="0">Похудение</label>
+                  <label class="form__label form__label--circle" for="slim">Похудение</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="fat">
-                  <label class="form__label form__label--circle" for="fat" tabindex="0">Набор массы</label>
+                  <label class="form__label form__label--circle" for="fat">Набор массы</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox form__checkbox--circle" type="radio" name="goal"
                     id="advice">
-                  <label class="form__label form__label--circle" for="advice" tabindex="0">Не знаю (нужен ваш
+                  <label class="form__label form__label--circle" for="advice">Не знаю (нужен ваш
                     совет)</label>
                 </li>
               </ul>
@@ -89,8 +89,8 @@
           </div>
           <fieldset class="form__block form__block--contact">
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
-            <div class="form__block--wrapper">
-              <div class="form__block--margin form__contact form__contact--email">
+            <div class="form__main-info">
+              <div class="form__field-wrap form__contact form__contact--email">
                 <label class="form__label" for="email">E-mail:*</label>
                 <div class="form__field--wrapper">
                   <input class="form__field form__field--email" id="email" type="email" name="email"
@@ -100,7 +100,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="form__block--margin form__contact form__contact--tel">
+              <div class="form__field-wrap form__contact form__contact--tel">
                 <label class="form__label" for="tel">Телефон:*</label>
                 <div class="form__field--wrapper">
                   <input class="form__field form__field--tel" id="tel" type="tel" name="tel"
@@ -125,19 +125,19 @@
             <ul class="list-style-clear form__list form__list--tablet">
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="sugar" checked>
-                <label class="form__label form__label--square" for="sugar" tabindex="0">Сахарозаменитель</label>
+                <label class="form__label form__label--square" for="sugar">Сахарозаменитель</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="water">
-                <label class="form__label form__label--square" for="water" tabindex="0">Питьевая вода</label>
+                <label class="form__label form__label--square" for="water">Питьевая вода</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="milk">
-                <label class="form__label form__label--square" for="milk" tabindex="0">Молоко</label>
+                <label class="form__label form__label--square" for="milk">Молоко</label>
               </li>
               <li>
                 <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="vitamin">
-                <label class="form__label form__label--square" for="vitamin" tabindex="0">Витамины</label>
+                <label class="form__label form__label--square" for="vitamin">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -157,14 +157,14 @@
           <p class="address-wrapper__text">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="main-footer__maps main-footer__maps--wrapper">
+      <div class="main-footer__maps">
         <iframe class="main-footer__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016.7054727971113!2d30.32012679706767!3d59.938759415982524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616838608523!5m2!1sru!2sua"
           width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
     <section class="social">
-      <div class="social--wrapper">
+      <div class="social__wrapper">
         <h2 class="visually-hidden">Присоединитесь к нам в сетях</h2>
         <a class="link-style-clear social__img" href="index.html">
           <svg width="128" height="24" viewBox="0 0 128 24">

@@ -52,7 +52,7 @@
   }
 }
 
-.form__block--wrapper {
+.form__main-info {
   position: relative;
 
   &:last-child {
@@ -98,7 +98,7 @@
   }
 }
 
-.form__block--margin {
+.form__field-wrap {
   display: flex;
   margin-bottom: 14px;
 
@@ -569,6 +569,10 @@
 
 .form__checkbox:disabled ~ .form__label--square {
   opacity: 0.3;
+}
+
+.form__checkbox:focus-visible + .form__label::after {
+  border: 1px solid $black;
 }
 
 .form__button {
